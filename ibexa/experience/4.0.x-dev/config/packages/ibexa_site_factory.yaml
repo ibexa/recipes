@@ -7,7 +7,7 @@ parameters:
     env(DATABASE_DRIVER): ''
     database_driver: '%env(DATABASE_DRIVER)%'
 
-ez_platform_site_factory:
+ibexa_site_factory:
     enabled: false
 #    templates:
 #        site_template:
