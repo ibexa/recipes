@@ -65,7 +65,7 @@ ezplatform:
         match:
             URIElement: 1
             # Uncomment if you've enabled SiteFactory
-            # '@EzSystems\EzPlatformSiteFactory\SiteAccessMatcher': ~
+            # '@Ibexa\EzPlatformSiteFactory\SiteAccessMatcher': ~
 
     # System settings, read in following order: `default`, <siteaccess-group>, <siteacces>, and `global`
     # TIP: For multisite installations organize shared config into SiteAccess groups,
@@ -89,8 +89,8 @@ ezplatform:
 
             assets:
                 icon_sets:
-                    public_icons: /bundles/ezplatformadminui/img/ibexa-icons.svg
-                    streamlineicons: /bundles/ibexaplatformicons/img/all-icons.svg
+                    public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
+                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
                 default_icon_set: streamlineicons
 
         site:
