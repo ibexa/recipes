@@ -87,7 +87,7 @@ ezplatform:
 
             assets:
                 icon_sets:
-                    public_icons: /bundles/ezplatformadminui/img/ibexa-icons.svg
+                    public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
                 default_icon_set: public_icons
 
         site:
