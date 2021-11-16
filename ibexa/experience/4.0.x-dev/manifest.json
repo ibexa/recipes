@@ -30,7 +30,7 @@
     "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": ["all"],
     "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": ["all"],
     "Ibexa\\Bundle\\Cron\\IbexaCronBundle": ["all"],
-    "Ibexa\\Bundle\\Installer\\EzSystemsPlatformInstallerBundle": ["all"],
+    "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
     "Ibexa\\Bundle\\DoctrineSchema\\DoctrineSchemaBundle": ["all"],
     "Ibexa\\Bundle\\ContentForms\\IbexaContentFormsBundle": ["all"],
     "Ibexa\\Bundle\\DesignEngine\\IbexaDesignEngineBundle": ["all"],
