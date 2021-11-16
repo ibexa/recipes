@@ -31,7 +31,7 @@
     "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": ["dev", "test", "behat"],
     "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": ["all"],
     "Ibexa\\Bundle\\Cron\\IbexaCronBundle": ["all"],
-    "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
+    "Ibexa\\Bundle\\RepositoryInstaller\\IbexaRepositoryInstallerBundle": ["all"],
     "Ibexa\\Bundle\\DoctrineSchema\\DoctrineSchemaBundle": ["all"],
     "Ibexa\\Bundle\\ContentForms\\IbexaContentFormsBundle": ["all"],
     "Ibexa\\Bundle\\DesignEngine\\IbexaDesignEngineBundle": ["all"],
