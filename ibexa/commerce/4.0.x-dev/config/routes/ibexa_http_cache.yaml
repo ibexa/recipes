@@ -1,2 +1,2 @@
 ezplatform_http_cache:
-    resource: '@IbexaSchedulerHttpCacheBundle/Resources/config/routing.yml'
+    resource: '@IbexaHttpCacheBundle/Resources/config/routing.yml'
