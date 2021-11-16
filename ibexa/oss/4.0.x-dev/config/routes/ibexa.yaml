@@ -9,4 +9,4 @@ logout:
     path: /logout
 
 ezplatform_kernel_internal:
-    resource: '@EzPublishCoreBundle/Resources/config/routing/internal.yml'
+    resource: '@IbexaCoreBundle/Resources/config/routing/internal.yml'
