@@ -19,8 +19,6 @@
     "Oneup\\FlysystemBundle\\OneupFlysystemBundle": ["all"],
     "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": ["all"],
     "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": ["all"],
-    "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": ["all"],
     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
     "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],

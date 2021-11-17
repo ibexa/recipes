@@ -22,8 +22,6 @@
     "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": ["all"],
     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
     "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": ["all"],
-    "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": ["all"],
     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
     "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": ["all"],
     "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],
