@@ -18,7 +18,6 @@
     "Nelmio\\CorsBundle\\NelmioCorsBundle": ["all"],
     "Oneup\\FlysystemBundle\\OneupFlysystemBundle": ["all"],
     "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": ["all"],
-    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": ["all"],
     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
     "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],

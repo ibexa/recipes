@@ -21,7 +21,6 @@
     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"],
     "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": ["all"],
     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
-    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": ["all"],
     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
     "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": ["all"],
     "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],

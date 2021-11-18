@@ -24,7 +24,6 @@
     "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": ["dev", "test", "behat"],
     "Ibexa\\Bundle\\HttpCache\\IbexaHttpCacheBundle": ["all"],
     "Ibexa\\Bundle\\Rest\\IbexaRestBundle": ["all"],
-    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": ["all"],
     "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": ["all"],
     "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": ["all"],
     "Ibexa\\Bundle\\Cron\\IbexaCronBundle": ["all"],
