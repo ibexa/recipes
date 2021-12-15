@@ -1,6 +1,11 @@
 const fs = require('fs');
-const findItems = (eZConfig, entryName) => {
-    const items = eZConfig.entry[entryName];
+const ibexifyEntryName = (entryName) => {
+    const ibexaEntryName = entryName.replace('ezplatform-', 'ibexa-').replace('ezcommerce-', 'ibexacommerce-');
+
+    return ibexaEntryName;
+}
+const findItems = (ibexaConfig, entryName) => {
+    const items = ibexaConfig.entry[entryName];
 
     if (!items) {
         throw new Error(`Couldn't find entry with name: "${entryName}". Please check if there is a typo in the name.`);
@@ -8,26 +13,32 @@ const findItems = (eZConfig, entryName) => {
 
     return items;
 };
-const replace = ({ eZConfig, entryName, itemToReplace, newItem }) => {
-    const items = findItems(eZConfig, entryName);
+const replace = ({ ibexaConfig, eZConfig, entryName, itemToReplace, newItem }) => {
+    const config = ibexaConfig ?? eZConfig;
+    const ibexaEntryName = ibexifyEntryName(entryName);
+    const items = findItems(config, ibexaEntryName);
     const indexToReplace = items.indexOf(fs.realpathSync(itemToReplace));
 
     if (indexToReplace < 0) {
-        throw new Error(`Couldn't find item "${itemToReplace}" in entry "${entryName}". Please check if there is a typo in the name.`);
+        throw new Error(`Couldn't find item "${itemToReplace}" in entry "${ibexaEntryName}". Please check if there is a typo in the name.`);
     }
 
     items[indexToReplace] = newItem;
 };
-const remove = ({ eZConfig, entryName, itemsToRemove }) => {
-    const items = findItems(eZConfig, entryName);
+const remove = ({ ibexaConfig, eZConfig, entryName, itemsToRemove }) => {
+    const config = ibexaConfig ?? eZConfig;
+    const ibexaEntryName = ibexifyEntryName(entryName);
+    const items = findItems(config, ibexaEntryName);
     const realPathItemsToRemove = itemsToRemove.map((item) => fs.realpathSync(item));
 
-    eZConfig.entry[entryName] = items.filter((item) => !realPathItemsToRemove.includes(item));
+    config.entry[ibexaEntryName] = items.filter((item) => !realPathItemsToRemove.includes(item));
 };
-const add = ({ eZConfig, entryName, newItems }) => {
-    const items = findItems(eZConfig, entryName);
+const add = ({ ibexaConfig, eZConfig, entryName, newItems }) => {
+    const config = ibexaConfig ?? eZConfig;
+    const ibexaEntryName = ibexifyEntryName(entryName);
+    const items = findItems(config, ibexaEntryName);
 
-    eZConfig.entry[entryName] = [...items, ...newItems];
+    config.entry[ibexaEntryName] = [...items, ...newItems];
 };
 
 module.exports = {
