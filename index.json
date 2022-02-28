@@ -1,0 +1,671 @@
+{
+    "aliases": {
+        "cms": "ibexa/oss",
+        "cms-commerce": "ibexa/commerce",
+        "cms-content": "ibexa/content",
+        "cms-experience": "ibexa/experience",
+        "cmscommerce": "ibexa/commerce",
+        "cmscontent": "ibexa/content",
+        "cmsexperience": "ibexa/experience",
+        "commerce": "ibexa/commerce",
+        "content": "ibexa/content",
+        "dxp-commerce": "ibexa/commerce",
+        "dxp-content": "ibexa/content",
+        "dxp-experience": "ibexa/experience",
+        "dxpcommerce": "ibexa/commerce",
+        "dxpcontent": "ibexa/content",
+        "dxpexperience": "ibexa/experience",
+        "experience": "ibexa/experience",
+        "ibexa": "ibexa/oss",
+        "ibexa-commerce": "ibexa/commerce",
+        "ibexa-content": "ibexa/content",
+        "ibexa-experience": "ibexa/experience",
+        "ibexa-oss": "ibexa/oss",
+        "ibexacommerce": "ibexa/commerce",
+        "ibexacontent": "ibexa/content",
+        "ibexaexperience": "ibexa/experience",
+        "ibexaoss": "ibexa/oss"
+    },
+    "recipes": {
+        "doctrine/annotations": [
+            "1.10"
+        ],
+        "ezsystems/behatbundle": [
+            "8.3.x-dev",
+            "9.0.x-dev"
+        ],
+        "ezsystems/date-based-publisher": [
+            "4.3",
+            "4.3.x-dev",
+            "5.0.x-dev"
+        ],
+        "ezsystems/doctrine-dbal-schema": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ez-support-tools": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-admin-ui": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-base-design": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-checkout": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-erp-admin": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-fieldtypes": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-order-history": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-page-builder": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-price-engine": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-rest": [
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-shop": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-shop-ui": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezcommerce-transaction": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-admin-ui": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-admin-ui-assets": [
+            "5.3"
+        ],
+        "ezsystems/ezplatform-calendar": [
+            "1.3",
+            "1.3.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-connector-dam": [
+            "1.1",
+            "1.1.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-content-forms": [
+            "1.3",
+            "1.3.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-core": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-cron": [
+            "3.1",
+            "3.1.x-dev",
+            "4.0.x-dev"
+        ],
+        "ezsystems/ezplatform-design-engine": [
+            "3.0",
+            "3.0.x-dev",
+            "4.0.x-dev"
+        ],
+        "ezsystems/ezplatform-ee-installer": [
+            "3.3",
+            "3.3.x-dev"
+        ],
+        "ezsystems/ezplatform-elastic-search-engine": [
+            "1.2",
+            "1.2.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-form-builder": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-graphql": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-http-cache": [
+            "2.2",
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-http-cache-fastly": [
+            "2.0",
+            "2.0.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-icons": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-kernel": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-matrix-fieldtype": [
+            "2.2",
+            "2.2.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-page-builder": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-page-fieldtype": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-permissions": [
+            "1.1",
+            "1.1.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-personalization": [
+            "1.0",
+            "1.0.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-query-fieldtype": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-rest": [
+            "1.3",
+            "1.3.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-richtext": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-search": [
+            "1.2",
+            "1.2.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-segmentation": [
+            "1.1",
+            "1.1.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-site-factory": [
+            "1.3",
+            "1.3.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-solr-search-engine": [
+            "3.3",
+            "3.3.x-dev",
+            "4.0.x-dev"
+        ],
+        "ezsystems/ezplatform-standard-design": [
+            "0.3",
+            "0.3.x-dev",
+            "0.4.x-dev"
+        ],
+        "ezsystems/ezplatform-user": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezplatform-version-comparison": [
+            "1.3",
+            "1.3.x-dev",
+            "2.0.x-dev"
+        ],
+        "ezsystems/ezplatform-workflow": [
+            "2.3",
+            "2.3.x-dev",
+            "3.0.x-dev"
+        ],
+        "ezsystems/ezrecommendation-client": [
+            "2.0",
+            "2.0.x-dev",
+            "3.0.x-dev"
+        ],
+        "ibexa/admin-ui": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/admin-ui-assets": [
+            "4.0",
+            "4.0.0-beta1",
+            "4.0.0-beta2",
+            "4.0.0-beta3",
+            "4.0.0-beta4",
+            "4.0.0-beta5",
+            "4.0.0-rc1",
+            "4.0.0-rc2",
+            "4.0.0-rc3",
+            "4.0.0-rc4",
+            "4.0.0-rc5",
+            "4.0.1",
+            "4.0.2",
+            "4.0.x-dev"
+        ],
+        "ibexa/calendar": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce": [
+            "3.3.0",
+            "3.3.1",
+            "3.3.2",
+            "3.3.3",
+            "3.3.4",
+            "3.3.5",
+            "3.3.6",
+            "3.3.7",
+            "3.3.8",
+            "3.3.9",
+            "3.3.10",
+            "3.3.11",
+            "3.3.12",
+            "3.3.13",
+            "3.3.14",
+            "3.3.15",
+            "3.3.x-dev",
+            "4.0.0",
+            "4.0.0-alpha1",
+            "4.0.0-alpha2",
+            "4.0.0-beta1",
+            "4.0.0-beta2",
+            "4.0.0-beta3",
+            "4.0.0-beta4",
+            "4.0.0-beta5",
+            "4.0.0-rc1",
+            "4.0.0-rc2",
+            "4.0.0-rc3",
+            "4.0.0-rc4",
+            "4.0.0-rc5",
+            "4.0.1",
+            "4.0.2",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-admin-ui": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-base-design": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-checkout": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-erp-admin": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-fieldtypes": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-order-history": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-page-builder": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-price-engine": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-rest": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-shop": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-shop-ui": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/commerce-transaction": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/compatibility-layer": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/connector-dam": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/connector-unsplash": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/content": [
+            "3.3.0",
+            "3.3.1",
+            "3.3.2",
+            "3.3.3",
+            "3.3.4",
+            "3.3.5",
+            "3.3.6",
+            "3.3.7",
+            "3.3.8",
+            "3.3.9",
+            "3.3.10",
+            "3.3.11",
+            "3.3.12",
+            "3.3.13",
+            "3.3.14",
+            "3.3.15",
+            "3.3.x-dev",
+            "4.0.0",
+            "4.0.0-alpha1",
+            "4.0.0-alpha2",
+            "4.0.0-beta1",
+            "4.0.0-beta2",
+            "4.0.0-beta3",
+            "4.0.0-beta4",
+            "4.0.0-beta5",
+            "4.0.0-rc1",
+            "4.0.0-rc2",
+            "4.0.0-rc3",
+            "4.0.0-rc4",
+            "4.0.0-rc5",
+            "4.0.1",
+            "4.0.2",
+            "4.0.x-dev"
+        ],
+        "ibexa/content-forms": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/content-tree": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/core": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/cron": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/design-engine": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/docker": [
+            "0.1",
+            "0.1.x-dev",
+            "0.2.x-dev"
+        ],
+        "ibexa/doctrine-schema": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/elasticsearch": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/experience": [
+            "3.3.0",
+            "3.3.1",
+            "3.3.2",
+            "3.3.3",
+            "3.3.4",
+            "3.3.5",
+            "3.3.6",
+            "3.3.7",
+            "3.3.8",
+            "3.3.9",
+            "3.3.10",
+            "3.3.11",
+            "3.3.12",
+            "3.3.13",
+            "3.3.14",
+            "3.3.15",
+            "3.3.x-dev",
+            "4.0.0",
+            "4.0.0-alpha1",
+            "4.0.0-alpha2",
+            "4.0.0-beta1",
+            "4.0.0-beta2",
+            "4.0.0-beta3",
+            "4.0.0-beta4",
+            "4.0.0-beta5",
+            "4.0.0-rc1",
+            "4.0.0-rc2",
+            "4.0.0-rc3",
+            "4.0.0-rc4",
+            "4.0.0-rc5",
+            "4.0.1",
+            "4.0.2",
+            "4.0.x-dev"
+        ],
+        "ibexa/fastly": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/fieldtype-matrix": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/fieldtype-page": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/fieldtype-query": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/fieldtype-richtext": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/form-builder": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/graphql": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/http-cache": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/icons": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/image-editor": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/installer": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/migrations": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/namespace-compatibility": [
+            "1.0",
+            "1.0.x-dev"
+        ],
+        "ibexa/oauth2-client": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/oss": [
+            "3.3.0",
+            "3.3.1",
+            "3.3.2",
+            "3.3.3",
+            "3.3.4",
+            "3.3.5",
+            "3.3.6",
+            "3.3.7",
+            "3.3.8",
+            "3.3.9",
+            "3.3.10",
+            "3.3.11",
+            "3.3.12",
+            "3.3.13",
+            "3.3.14",
+            "3.3.15",
+            "3.3.x-dev",
+            "4.0.0",
+            "4.0.0-alpha1",
+            "4.0.0-alpha2",
+            "4.0.0-beta1",
+            "4.0.0-beta2",
+            "4.0.0-beta3",
+            "4.0.0-beta4",
+            "4.0.0-beta5",
+            "4.0.0-rc1",
+            "4.0.0-rc2",
+            "4.0.0-rc3",
+            "4.0.0-rc4",
+            "4.0.0-rc5",
+            "4.0.1",
+            "4.0.2",
+            "4.0.x-dev"
+        ],
+        "ibexa/page-builder": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/permissions": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/personalization": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/personalization-client": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/product-catalog": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/rest": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/scheduler": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/search": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/segmentation": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/site-factory": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/solr": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/standard-design": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/system-info": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/taxonomy": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/tree-builder": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/user": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/version-comparison": [
+            "4.0",
+            "4.0.x-dev"
+        ],
+        "ibexa/workflow": [
+            "4.0",
+            "4.0.x-dev"
+        ]
+    },
+    "recipe-conflicts": [],
+    "versions": [],
+    "branch": "master",
+    "is_contrib": false,
+    "_links": {
+        "repository": "github.com/ibexa/recipes",
+        "origin_template": "{package}:{version}@github.com/ibexa/recipes:master",
+        "recipe_template": "https://raw.githubusercontent.com/ibexa/recipes/flex/main/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/ibexa/recipes/flex/main/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
+}
