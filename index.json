@@ -290,6 +290,9 @@
             "4.0.2",
             "4.0.x-dev"
         ],
+        "ibexa/behat": [
+            "4.0.x-dev"
+        ],
         "ibexa/calendar": [
             "4.0",
             "4.0.x-dev"
