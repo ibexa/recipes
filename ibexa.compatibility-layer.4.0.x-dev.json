@@ -64,7 +64,6 @@
                 },
                 "encore/ez.webpack.config.js": {
                     "contents": [
-                        "const path = require('path');",
                         "const bundles = require('./var/encore/ibexa.config.js');",
                         "const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');",
                         "const configManagers = require('./var/encore/ibexa.config.manager.js');",
@@ -228,7 +227,7 @@
                     "executable": false
                 }
             },
-            "ref": "e09203169d6770d2fb8745ac6a658075d5ca27b5"
+            "ref": "63512400fd4237c06ee9d559274ee15db752d59e"
         }
     }
 }
