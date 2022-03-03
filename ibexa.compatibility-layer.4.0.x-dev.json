@@ -68,6 +68,8 @@
                         "const bundles = require('./var/encore/ibexa.config.js');",
                         "const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');",
                         "const configManagers = require('./var/encore/ibexa.config.manager.js');",
+                        "const configSetups = require('./var/encore/ibexa.config.setup.js');",
+                        "const path = require('path');",
                         "",
                         "module.exports = (Encore) => {",
                         "    Encore.setOutputPath('public/assets/ezplatform/build')",
@@ -83,6 +85,12 @@
                         "        .enableSassLoader()",
                         "        .enableReactPreset()",
                         "        .enableSingleRuntimeChunk();",
+                        "",
+                        "    configSetups.forEach((configSetupPath) => {",
+                        "        const setupConfig = require(configSetupPath);",
+                        "",
+                        "        setupConfig(Encore);",
+                        "    });",
                         "",
                         "    bundles.forEach((configPath) => {",
                         "        const addEntries = require(configPath);",
@@ -220,7 +228,7 @@
                     "executable": false
                 }
             },
-            "ref": "8bfb5e5178337fbc032af07a66a3545066704b49"
+            "ref": "e09203169d6770d2fb8745ac6a658075d5ca27b5"
         }
     }
 }
