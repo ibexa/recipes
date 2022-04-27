@@ -10,6 +10,7 @@ module.exports = (Encore) => {
         .addExternals({
             react: 'React',
             'react-dom': 'ReactDOM',
+            'react-dom/client': 'ReactDOMClient',
             moment: 'moment',
             'popper.js': 'Popper',
             alloyeditor: 'AlloyEditor',
