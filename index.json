@@ -298,6 +298,9 @@
             "4.1",
             "4.2"
         ],
+        "ibexa/corporate-account": [
+            "4.2"
+        ],
         "ibexa/cron": [
             "4.0",
             "4.1",
@@ -331,6 +334,9 @@
         "ibexa/fastly": [
             "4.0",
             "4.1",
+            "4.2"
+        ],
+        "ibexa/fieldtype-address": [
             "4.2"
         ],
         "ibexa/fieldtype-matrix": [

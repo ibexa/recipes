@@ -77,6 +77,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/content-forms](https://packagist.org/packages/ibexa/content-forms) | [4.2](ibexa/content-forms/4.2) |  |
 | [ibexa/content-tree](https://packagist.org/packages/ibexa/content-tree) | [4.2](ibexa/content-tree/4.2) |  |
 | [ibexa/core](https://packagist.org/packages/ibexa/core) | [4.2](ibexa/core/4.2) |  |
+| [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.2](ibexa/corporate-account/4.2) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.2](ibexa/cron/4.2) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.2](ibexa/design-engine/4.2) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [0.2](ibexa/docker/0.2) |  |
@@ -84,6 +85,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [4.2](ibexa/elasticsearch/4.2) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [4.2](ibexa/experience/4.2) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
 | [ibexa/fastly](https://packagist.org/packages/ibexa/fastly) | [4.2](ibexa/fastly/4.2) |  |
+| [ibexa/fieldtype-address](https://packagist.org/packages/ibexa/fieldtype-address) | [4.2](ibexa/fieldtype-address/4.2) |  |
 | [ibexa/fieldtype-matrix](https://packagist.org/packages/ibexa/fieldtype-matrix) | [4.2](ibexa/fieldtype-matrix/4.2) |  |
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [4.2](ibexa/fieldtype-page/4.2) |  |
 | [ibexa/fieldtype-query](https://packagist.org/packages/ibexa/fieldtype-query) | [4.2](ibexa/fieldtype-query/4.2) |  |
