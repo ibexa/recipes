@@ -57,6 +57,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [4.2](ibexa/admin-ui-assets/4.2) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [4.2](ibexa/behat/4.2) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [4.2](ibexa/calendar/4.2) |  |
+| [ibexa/cdp](https://packagist.org/packages/ibexa/cdp) | [4.2](ibexa/cdp/4.2) | `cdp`, `ibexa-cdp`, `ibexacdp` |
 | [ibexa/commerce](https://packagist.org/packages/ibexa/commerce) | [4.2](ibexa/commerce/4.2) | `cms-commerce`, `cmscommerce`, `commerce`, `dxp-commerce`, `dxpcommerce`, `ibexa-commerce`, `ibexacommerce` |
 | [ibexa/commerce-admin-ui](https://packagist.org/packages/ibexa/commerce-admin-ui) | [4.2](ibexa/commerce-admin-ui/4.2) |  |
 | [ibexa/commerce-base-design](https://packagist.org/packages/ibexa/commerce-base-design) | [4.2](ibexa/commerce-base-design/4.2) |  |
@@ -80,7 +81,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.2](ibexa/corporate-account/4.2) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.2](ibexa/cron/4.2) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.2](ibexa/design-engine/4.2) |  |
-| [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [0.2](ibexa/docker/0.2) |  |
+| [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [4.2](ibexa/docker/4.2) |  |
 | [ibexa/doctrine-schema](https://packagist.org/packages/ibexa/doctrine-schema) | [4.2](ibexa/doctrine-schema/4.2) |  |
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [4.2](ibexa/elasticsearch/4.2) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [4.2](ibexa/experience/4.2) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
@@ -110,6 +111,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/scheduler](https://packagist.org/packages/ibexa/scheduler) | [4.2](ibexa/scheduler/4.2) |  |
 | [ibexa/search](https://packagist.org/packages/ibexa/search) | [4.2](ibexa/search/4.2) |  |
 | [ibexa/segmentation](https://packagist.org/packages/ibexa/segmentation) | [4.2](ibexa/segmentation/4.2) |  |
+| [ibexa/seo](https://packagist.org/packages/ibexa/seo) | [4.2](ibexa/seo/4.2) |  |
 | [ibexa/site-factory](https://packagist.org/packages/ibexa/site-factory) | [4.2](ibexa/site-factory/4.2) |  |
 | [ibexa/solr](https://packagist.org/packages/ibexa/solr) | [4.2](ibexa/solr/4.2) |  |
 | [ibexa/standard-design](https://packagist.org/packages/ibexa/standard-design) | [4.2](ibexa/standard-design/4.2) |  |

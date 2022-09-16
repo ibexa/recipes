@@ -1,5 +1,6 @@
 {
     "aliases": {
+        "cdp": "ibexa/cdp",
         "cms": "ibexa/oss",
         "cms-commerce": "ibexa/commerce",
         "cms-content": "ibexa/content",
@@ -17,10 +18,12 @@
         "dxpexperience": "ibexa/experience",
         "experience": "ibexa/experience",
         "ibexa": "ibexa/oss",
+        "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
         "ibexa-oss": "ibexa/oss",
+        "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
@@ -196,6 +199,10 @@
             "4.1",
             "4.2"
         ],
+        "ibexa/cdp": [
+            "1.0",
+            "4.2"
+        ],
         "ibexa/commerce": [
             "3.3",
             "4.0",
@@ -313,7 +320,10 @@
         ],
         "ibexa/docker": [
             "0.1",
-            "0.2"
+            "0.2",
+            "3.3",
+            "4.1",
+            "4.2"
         ],
         "ibexa/doctrine-schema": [
             "4.0",
@@ -455,6 +465,9 @@
         "ibexa/segmentation": [
             "4.0",
             "4.1",
+            "4.2"
+        ],
+        "ibexa/seo": [
             "4.2"
         ],
         "ibexa/site-factory": [
