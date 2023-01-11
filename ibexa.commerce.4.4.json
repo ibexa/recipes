@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "ibexa/experience": {
+        "ibexa/commerce": {
             "manifest": {
                 "bundles": {
                     "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
@@ -21,25 +21,22 @@
                     "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": [
                         "all"
                     ],
-                    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
-                        "all"
-                    ],
                     "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": [
                         "all"
                     ],
                     "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": [
                         "all"
                     ],
-                    "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": [
+                    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
                         "all"
                     ],
                     "FOS\\JsRoutingBundle\\FOSJsRoutingBundle": [
                         "all"
                     ],
-                    "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": [
+                    "JMS\\TranslationBundle\\JMSTranslationBundle": [
                         "all"
                     ],
-                    "JMS\\TranslationBundle\\JMSTranslationBundle": [
+                    "Oneup\\FlysystemBundle\\OneupFlysystemBundle": [
                         "all"
                     ],
                     "Liip\\ImagineBundle\\LiipImagineBundle": [
@@ -48,10 +45,19 @@
                     "Nelmio\\CorsBundle\\NelmioCorsBundle": [
                         "all"
                     ],
-                    "Oneup\\FlysystemBundle\\OneupFlysystemBundle": [
+                    "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": [
                         "all"
                     ],
                     "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": [
+                        "all"
+                    ],
+                    "Gregwar\\CaptchaBundle\\GregwarCaptchaBundle": [
+                        "all"
+                    ],
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
+                        "all"
+                    ],
+                    "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": [
@@ -60,22 +66,19 @@
                     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": [
                         "all"
                     ],
+                    "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": [
+                        "all"
+                    ],
                     "Ibexa\\Bundle\\IO\\IbexaIOBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Rest\\IbexaRestBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": [
                         "dev",
                         "test",
                         "behat"
-                    ],
-                    "Ibexa\\Bundle\\HttpCache\\IbexaHttpCacheBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Rest\\IbexaRestBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": [
-                        "all"
                     ],
                     "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": [
                         "all"
@@ -113,13 +116,7 @@
                     "Ibexa\\Bundle\\FieldTypeMatrix\\IbexaFieldTypeMatrixBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\GraphQL\\IbexaGraphQLBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\FieldTypeQuery\\IbexaFieldTypeQueryBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Search\\IbexaSearchBundle": [
+                    "Ibexa\\Bundle\\HttpCache\\IbexaHttpCacheBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Fastly\\IbexaFastlyBundle": [
@@ -146,13 +143,37 @@
                     "Ibexa\\Bundle\\SiteFactory\\IbexaSiteFactoryBundle": [
                         "all"
                     ],
+                    "Ibexa\\Bundle\\GraphQL\\IbexaGraphQLBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\FieldTypeQuery\\IbexaFieldTypeQueryBundle": [
+                        "all"
+                    ],
                     "Ibexa\\Bundle\\VersionComparison\\IbexaVersionComparisonBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Search\\IbexaSearchBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": [
+                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
+                        "dev"
+                    ],
+                    "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
+                        "all"
+                    ],
+                    "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
+                        "all"
+                    ],
+                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": [
@@ -182,94 +203,16 @@
                     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": [
                         "all"
                     ],
-                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
-                        "all"
-                    ],
-                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
-                        "dev"
-                    ],
-                    "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
-                        "all"
-                    ],
-                    "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
-                        "all"
-                    ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
-                        "all"
-                    ],
-                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": [
                         "all"
                     ],
-                    "FOS\\CommentBundle\\FOSCommentBundle": [
-                        "all"
-                    ],
-                    "Tedivm\\StashBundle\\TedivmStashBundle": [
-                        "all"
-                    ],
-                    "WhiteOctober\\BreadcrumbsBundle\\WhiteOctoberBreadcrumbsBundle": [
-                        "all"
-                    ],
-                    "Nelmio\\SolariumBundle\\NelmioSolariumBundle": [
-                        "all"
-                    ],
-                    "JMS\\Payment\\CoreBundle\\JMSPaymentCoreBundle": [
-                        "all"
-                    ],
-                    "Joli\\ApacheTikaBundle\\ApacheTikaBundle": [
-                        "all"
-                    ],
-                    "JMS\\JobQueueBundle\\JMSJobQueueBundle": [
-                        "all"
-                    ],
-                    "FOS\\RestBundle\\FOSRestBundle": [
-                        "all"
-                    ],
-                    "JMS\\SerializerBundle\\JMSSerializerBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Eshop\\IbexaCommerceEshopBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\ShopTools\\IbexaCommerceShopToolsBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Translation\\IbexaCommerceTranslationBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Payment\\IbexaCommercePaymentBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Price\\IbexaCommercePriceBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Tools\\IbexaCommerceToolsBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Search\\IbexaCommerceSearchBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\PriceEngine\\IbexaCommercePriceEngineBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\SpecificationsType\\IbexaCommerceSpecificationsTypeBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\BaseDesign\\IbexaCommerceBaseDesignBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\FieldTypes\\IbexaCommerceFieldTypesBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Checkout\\IbexaCommerceCheckoutBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\ShopUi\\IbexaCommerceShopUiBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Cart\\IbexaCartBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Checkout\\IbexaCheckoutBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": [
@@ -285,6 +228,9 @@
                         "all"
                     ],
                     "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": [
                         "all"
                     ]
                 },
@@ -321,6 +267,7 @@
                     "DATABASE_VERSION": "mariadb-10.3.0",
                     "SESSION_HANDLER_ID": "session.handler.native_file",
                     "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
+                    "SOLR_DSN": "http://localhost:8983/solr",
                     "SOLR_CORE": "collection1",
                     "#12": "Enable Personalization by setting valid id, key and uri",
                     "PERSONALIZATION_CUSTOMER_ID": 0,
@@ -331,16 +278,7 @@
                     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
                     "#15": "FASTLY_SERVICE_ID=\"\"",
                     "#16": "FASTLY_KEY=\"\"",
-                    "SISO_SEARCH_SOLR_HOST": "localhost",
-                    "SISO_SEARCH_SOLR_PORT": 8983,
-                    "SISO_SEARCH_SOLR_CORE": "collection1",
-                    "#17": "Do not add 'solr' to the path. It is automatically added by SolariumBundle",
-                    "SISO_SEARCH_SOLR_PATH": "",
-                    "#18": "SolariumBundle Solr DSN configuration",
-                    "#19": "Note that the /solr suffix will be appended automatically to Ibexa Solr Search Engine Bundle configuration",
-                    "SOLR_DSN": "http://${SISO_SEARCH_SOLR_HOST}:${SISO_SEARCH_SOLR_PORT}${SISO_SEARCH_SOLR_PATH}",
-                    "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e",
-                    "IBEXA_EDITION": "experience",
+                    "IBEXA_EDITION": "commerce",
                     "#20": "Default LOCK_DSN value (semaphore) makes project require additional 'sysvsem' PHP extension.",
                     "#21": "If you have that extension feel free to reconfigure this env value back to 'semaphore'.",
                     "#22": "'flock' is safe replacement and is backward compatible. Required by Symfony Rate Limiter.",
@@ -373,7 +311,7 @@
                     "To finish the installation process:",
                     "    1. Configure the database connection via <comment>DATABASE_URL</> in your <comment>.env</> file.",
                     "    2. Run the following commands:",
-                    "       >  <comment>composer recipes:install ibexa/experience --force</>",
+                    "       >  <comment>composer recipes:install ibexa/commerce --force</>",
                     "          <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.",
                     "       >  <comment>php bin/console ibexa:install</>",
                     "       >  <comment>php bin/console ibexa:graphql:generate-schema</>",
@@ -634,349 +572,6 @@
                     ],
                     "executable": false
                 },
-                "config/packages/commerce.yaml": {
-                    "contents": [
-                        "imports:",
-                        "    - { resource: commerce/autogenerated/*.yaml }",
-                        "    - { resource: commerce/commerce_parameters.yaml }",
-                        "    - { resource: commerce/commerce.yaml }",
-                        "    - { resource: '@IbexaProductCatalogBundle/Resources/config/bridge.yaml' }",
-                        "    - { resource: commerce/commerce_demo.yaml }",
-                        "    - { resource: commerce/commerce_common.yaml }",
-                        "    - { resource: commerce/commerce_advanced.yaml }",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/autogenerated/.gitkeep": {
-                    "contents": [
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header.png",
-                        "",
-                        "",
-                        "    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true",
-                        "",
-                        "    # Default settings for Commerce - will be overridden by backend config!",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.product_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.product_detail:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.slider_product_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.basket:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.basket_variant:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.stored_basket:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.wish_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order_line_preview:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.comparison:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.search_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.bestseller_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_advanced.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header-advanced.png",
-                        "",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.erp_connection: false",
-                        "    ibexa.commerce.site_access.config.order.management.local.default.send_order_to_erp: false",
-                        "    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true",
-                        "",
-                        "    # please set in backend configsection using the ERP URL for your ERP",
-                        "    ibexa.commerce.site_access.config.erp.default.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
-                        "    ibexa.commerce.erp.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
-                        "",
-                        "nelmio_solarium:",
-                        "    endpoints:",
-                        "        default:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: '%ibexa.commerce.search.solr.core%'",
-                        "        siso_core_admin:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: admin",
-                        "        siso_econtent:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: econtent",
-                        "        siso_econtent_back:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: econtent_back",
-                        "",
-                        "    clients:",
-                        "        default:",
-                        "            adapter_timeout: 30",
-                        "            endpoints:",
-                        "                - default",
-                        "        siso_core_admin:",
-                        "            adapter_timeout: 30",
-                        "        siso_econtent:",
-                        "            adapter_timeout: 30",
-                        "        siso_econtent_back:",
-                        "            adapter_timeout: 30",
-                        "        econtent:",
-                        "            endpoints:",
-                        "                - siso_econtent",
-                        "                - siso_econtent_back",
-                        "                - siso_core_admin",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_common.yaml": {
-                    "contents": [
-                        "# common parts",
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.search.de.facet_position: left",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.de.standard_price_factory.fallback_currency: EUR",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.automatic_currency_conversion: true",
-                        "    ibexa.commerce.site_access.config.core.default.user_menu_bundles: ['IbexaCommerceEshopBundle','IbexaCommerceHistoryBundle']",
-                        "    ibexa.commerce.site_access.config.price.default.price_export.product_type_filter: [ses_product]",
-                        "    ibexa.commerce.site_access.config.core.default.breadcrumb_content_label_fields: ['name', 'title']",
-                        "",
-                        "    ibexa.commerce.site_access.config.seo.default.is_seo_bundle_enabled: false",
-                        "    ibexa.commerce.site_access.config.core.default.navigation.content:",
-                        "        types: [\"st_module\", \"folder\", \"article\", \"landing_page\", \"ses_productcatalog\"]",
-                        "        sections: [1, 2, 9]",
-                        "        enable_priority_zero: false",
-                        "        #additional field keys for translating navigation node label",
-                        "        label_fields: ['name', 'title']",
-                        "        additional_fields: ['intro', 'media', 'alternative_title', 'alternative_intro', 'alternative_image']",
-                        "    silver_eshop.default.path_prefix_seo: ''",
-                        "",
-                        "apache_tika:",
-                        "    path: '%apache_tika_path%'",
-                        "",
-                        "twig:",
-                        "    debug: '%kernel.debug%'",
-                        "    strict_variables: '%kernel.debug%'",
-                        "    form_themes:",
-                        "        - 'bootstrap_4_layout.html.twig'",
-                        "        - '@ibexadesign/Forms/form_div_layout.html.twig'",
-                        "",
-                        "jms_payment_core:",
-                        "    encryption:",
-                        "        provider: defuse_php_encryption",
-                        "        secret: '%env(JMS_PAYMENT_SECRET)%'",
-                        "        enabled: true",
-                        "",
-                        "stash:",
-                        "    caches:",
-                        "        default:",
-                        "            drivers:",
-                        "                - FileSystem",
-                        "            inMemory: true",
-                        "            registerDoctrineAdapter: false",
-                        "            FileSystem:",
-                        "                keyHashFunction: crc32",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_demo.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "",
-                        "    # ERP demo settings",
-                        "    ibexa.commerce.site_access.config.erp.de.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "    ibexa.commerce.site_access.config.erp.en.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "    ibexa.commerce.site_access.config.erp.admin.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "",
-                        "    # settings for ERP in order to use the right fallback customer numbers for customers without customer no",
-                        "    ibexa.commerce.core.template_debitor.customer_numbers:",
-                        "        #configuration for the zone",
-                        "        EU:",
-                        "            #configuration for the country",
-                        "            DE:",
-                        "                #customer groups possible:",
-                        "                #RBV: 10001",
-                        "                #more groups",
-                        "                #RBV_DVGW: 10002",
-                        "                #default if no customer groups available",
-                        "                default: 20000",
-                        "            #default value for the zone, if no country is specified",
-                        "            default: 40000",
-                        "        World:",
-                        "            default: 20000",
-                        "        #default value if no zone is specified",
-                        "        default: 20000",
-                        "",
-                        "",
-                        "    # facets for icecat demo products",
-                        "    ibexa.commerce.site_access.config.search.default.simple_facet_definitions:",
-                        "        download:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_is_download_value_b'",
-                        "        color:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_product_colour_value_s'",
-                        "        power:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_power_value_s'",
-                        "        product_type:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_product_type_value_s'",
-                        "        coffee_type:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_coffee_input_type_value_s'",
-                        "        beans:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_coffee_beans_capacity_value_s'",
-                        "        voltage:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_ac_input_voltage_value_s'",
-                        "        weight:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_weight_value_s'",
-                        "        pressure:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_pump_pressure_value_s'",
-                        "",
-                        "        price_range:",
-                        "            #possible values: single|multi_and|multi_or",
-                        "            filter_type: 'single'",
-                        "            #possible values: alpha|numeric|manual|range",
-                        "            sort_type: 'range'",
-                        "            #sort_type_order: 'XS|S|M|L|XL|XXL'",
-                        "            index_field: 'ext_ses_price_range_ms'",
-                        "            # ONLY VALID FOR THIS FACET",
-                        "            index_range_boundries: 0|10|20|50|100",
-                        "        manufacturer:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ses_brand_value_s'",
-                        "        style:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_style_s'",
-                        "        variant_color:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_variant_color_ms'",
-                        "        variant_size:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_variant_size_ms'",
-                        "        category:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'location_parent_id_mid'",
-                        "            # ONLY VALID FOR THIS FACET",
-                        "            location_id_values: true",
-                        "        size:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_size_s'",
-                        "        availability:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_stock_numeric_value_s'",
-                        "        discontinued:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_discontinued_value_b'",
-                        "        brand:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_brand_s'",
-                        "        temperature:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_temperature_s'",
-                        "",
-                        "",
-                        "    #which facets will be used per group",
-                        "    ibexa.commerce.site_access.config.search.default.used_facets:",
-                        "        product_list:",
-                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
-                        "            specifications: ['style', 'size',  'temperature']",
-                        "            variants: ['variant_color', 'variant_size']",
-                        "        product:",
-                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
-                        "            specifications: ['style', 'size',  'temperature']",
-                        "            variants: ['variant_color', 'variant_size']",
-                        "",
-                        "",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_parameters.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.core.default.ses_swiftmailer:",
-                        "        mailSender: noreply@ibexa.co",
-                        "        mailReceiver: noreply@ibexa.co",
-                        "        lostOrderEmailReceiver: noreply@ibexa.co",
-                        "        contactMailReceiver: noreply@ibexa.co",
-                        "        cancellationMailReceiver: noreply@ibexa.co",
-                        "        shopOwnerMailReceiver: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.forms.business.default_contact_recipient: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.order.sales_contact: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.lostorder_email: noreply@ibexa.co",
-                        "    ibexa.commerce.payment.paypal.receiver.email: noreply@ibexa.co",
-                        "",
-                        "    ibexa.commerce.core.site_access_group: ezdemo_site_clean_group",
-                        "    apache_tika_path: '%kernel.project_dir%/bin/tika-app-1.20.jar'",
-                        "",
-                        "    # commerce solr",
-                        "#    ibexa.commerce.search.solr.host: '%env(SISO_SEARCH_SOLR_HOST)%'",
-                        "#    ibexa.commerce.search.solr.port: '%env(SISO_SEARCH_SOLR_PORT)%'",
-                        "#    ibexa.commerce.search.solr.core: '%env(SISO_SEARCH_SOLR_CORE)%'",
-                        "#    ibexa.commerce.search.solr.path: '%env(SISO_SEARCH_SOLR_PATH)%'",
-                        "",
-                        "    one_sky_api_key: my-one-sky-key",
-                        "    one_sky_secret: my-onesky-password",
-                        "",
-                        "    ewz_recaptcha_public_key: public_key",
-                        "    ewz_recaptcha_private_key: private_key",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/dfs/dfs.yaml": {
                     "contents": [
                         "parameters:",
@@ -1121,10 +716,12 @@
                         "    # Siteaccess configuration, with one siteaccess per default",
                         "    siteaccess:",
                         "        list:",
+                        "            - import",
                         "            - site",
+                        "            - admin",
                         "            - corporate",
                         "        groups:",
-                        "            site_group: [site]",
+                        "            site_group: [import, site]",
                         "            corporate_group: [corporate]",
                         "        default_siteaccess: site",
                         "        match:",
@@ -1159,9 +756,13 @@
                         "                default_icon_set: streamlineicons",
                         "",
                         "            page_layout: \"@ibexadesign/pagelayout.html.twig\"",
-                        "            user_content_type_identifier: ['user']",
+                        "            user_content_type_identifier: ['user', 'customer']",
                         "        site:",
                         "            languages: [eng-GB]",
+                        "            user_content_type_identifier: ['customer']",
+                        "            user_registration:",
+                        "                user_type_identifier: 'customer'",
+                        "                group_id: 57",
                         "",
                         "        corporate_group:",
                         "            languages: [eng-GB]",
@@ -1224,7 +825,7 @@
                         "                content: /1/2/",
                         "                media: /1/43/",
                         "            page_builder:",
-                        "                siteaccess_list: [site]",
+                        "                siteaccess_list: [ site ]",
                         "            assets:",
                         "                icon_sets:",
                         "                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg",
@@ -1264,7 +865,7 @@
                         "                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'",
                         "                default-config:",
                         "                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'",
-                        "            user_content_type_identifier: ['user']",
+                        "            user_content_type_identifier: ['user', 'customer']",
                         ""
                     ],
                     "executable": false
@@ -1467,7 +1068,7 @@
                 },
                 "config/packages/ibexa_solr.yaml": {
                     "contents": [
-                        "# Base configuration for Solr, for more options see: https://doc.ezplatform.com/en/latest/guide/search/#solr-bundle",
+                        "# Base configuration for Solr, for more options see: https://doc.ibexa.co/en/latest/guide/search/search/#solr-bundle",
                         "# Can have several connections used by each Ibexa Repositories in ibexa.yaml",
                         "parameters:",
                         "    # Solr root endpoint, relevant if `solr` is set as search_engine",
@@ -1536,25 +1137,6 @@
                         "            enabled: false",
                         "        query_parameter:",
                         "            enabled: false",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/nelmio_solarium.yaml": {
-                    "contents": [
-                        "nelmio_solarium:",
-                        "    endpoints:",
-                        "        default:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: '%ibexa.commerce.search.solr.core%'",
-                        "",
-                        "    clients:",
-                        "        default:",
-                        "            adapter_timeout: 30",
-                        "            endpoints:",
-                        "                - default",
                         ""
                     ],
                     "executable": false
@@ -1683,7 +1265,8 @@
                         "                csrf_token_generator: security.csrf.token_manager",
                         "            guard:",
                         "                authenticator: 'Ibexa\\PageBuilder\\Security\\EditorialMode\\TokenAuthenticator'",
-                        "            logout: ~",
+                        "            logout:",
+                        "                path: logout",
                         "",
                         "        main:",
                         "            anonymous: ~",
@@ -1755,28 +1338,22 @@
                     ],
                     "executable": false
                 },
-                "config/routes/ibexa_commerce.yaml": {
+                "config/routes/ibexa_cart.yaml": {
                     "contents": [
-                        "ibexa.commerce.eshop:",
-                        "    resource: \"@IbexaCommerceEshopBundle/Resources/config/ses_routing.yml\"",
-                        "    prefix: /",
+                        "ibexa.cart:",
+                        "    resource: '@IbexaCartBundle/Resources/config/routing.yaml'",
                         "",
-                        "ibexa.commerce.tools:",
-                        "    resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.translation:",
-                        "    resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.checkout:",
-                        "    resource: '@IbexaCommerceCheckoutBundle/Resources/config/routing.yaml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.search:",
-                        "    resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
+                        "ibexa.cart.rest:",
+                        "    resource: '@IbexaCartBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_checkout.yaml": {
+                    "contents": [
+                        "ibexa.checkout:",
+                        "    resource: '@IbexaCheckoutBundle/Resources/config/routing.yaml'",
                         ""
                     ],
                     "executable": false
@@ -1810,7 +1387,6 @@
                         "    resource: '@IbexaCorporateAccountBundle/Resources/config/routing_customer_portal.yaml'",
                         "    defaults:",
                         "        siteaccess_group_whitelist: 'corporate_group'",
-                        "",
                         ""
                     ],
                     "executable": false
@@ -1970,6 +1546,22 @@
                     "contents": [
                         "ibexa.site_factory:",
                         "    resource: '@IbexaSiteFactoryBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_storefront.yaml": {
+                    "contents": [
+                        "ibexa.storefront:",
+                        "    resource: '@IbexaStorefrontBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_support_tools.yaml": {
+                    "contents": [
+                        "ibexa_system_info:",
+                        "  resource: '@IbexaSystemInfoBundle/Resources/config/routing.yaml'",
                         ""
                     ],
                     "executable": false
@@ -2179,12 +1771,12 @@
                         "    \"raw-loader\": \"^4.0.1\",",
                         "    \"style-loader\": \"^2.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
-                        "    \"@ckeditor/ckeditor5-alignment\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-build-inline\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^30.0.0\",",
-                        "    \"@ckeditor/ckeditor5-widget\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-code-block\": \"^34.1.0\"",
+                        "    \"@ckeditor/ckeditor5-alignment\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-build-inline\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^31.0.0\",",
+                        "    \"@ckeditor/ckeditor5-widget\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-code-block\": \"^35.3.2\"",
                         "  },",
                         "  \"license\": \"UNLICENSED\",",
                         "  \"private\": true,",
@@ -2549,7 +2141,7 @@
                     "executable": false
                 }
             },
-            "ref": "7c19a6af31eadcfe1ac9ff0929512c21d3727029"
+            "ref": "4bf778f01a75d27d5ae9e99ab65b9c12beb6edd5"
         }
     }
 }

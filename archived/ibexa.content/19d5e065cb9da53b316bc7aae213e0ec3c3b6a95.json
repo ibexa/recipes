@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "ibexa/experience": {
+        "ibexa/content": {
             "manifest": {
                 "bundles": {
                     "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
@@ -125,15 +125,6 @@
                     "Ibexa\\Bundle\\Fastly\\IbexaFastlyBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\PageBuilder\\IbexaPageBuilderBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\FieldTypePage\\IbexaFieldTypePageBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\FormBuilder\\IbexaFormBuilderBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\Scheduler\\IbexaSchedulerBundle": [
                         "all"
                     ],
@@ -141,9 +132,6 @@
                         "all"
                     ],
                     "Ibexa\\Bundle\\Calendar\\IbexaCalendarBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\SiteFactory\\IbexaSiteFactoryBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\VersionComparison\\IbexaVersionComparisonBundle": [
@@ -158,13 +146,7 @@
                     "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": [
                         "all"
                     ],
                     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": [
@@ -203,72 +185,6 @@
                     "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": [
                         "all"
                     ],
-                    "FOS\\CommentBundle\\FOSCommentBundle": [
-                        "all"
-                    ],
-                    "Tedivm\\StashBundle\\TedivmStashBundle": [
-                        "all"
-                    ],
-                    "WhiteOctober\\BreadcrumbsBundle\\WhiteOctoberBreadcrumbsBundle": [
-                        "all"
-                    ],
-                    "Nelmio\\SolariumBundle\\NelmioSolariumBundle": [
-                        "all"
-                    ],
-                    "JMS\\Payment\\CoreBundle\\JMSPaymentCoreBundle": [
-                        "all"
-                    ],
-                    "Joli\\ApacheTikaBundle\\ApacheTikaBundle": [
-                        "all"
-                    ],
-                    "JMS\\JobQueueBundle\\JMSJobQueueBundle": [
-                        "all"
-                    ],
-                    "FOS\\RestBundle\\FOSRestBundle": [
-                        "all"
-                    ],
-                    "JMS\\SerializerBundle\\JMSSerializerBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Eshop\\IbexaCommerceEshopBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\ShopTools\\IbexaCommerceShopToolsBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Translation\\IbexaCommerceTranslationBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Payment\\IbexaCommercePaymentBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Price\\IbexaCommercePriceBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Tools\\IbexaCommerceToolsBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Search\\IbexaCommerceSearchBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\PriceEngine\\IbexaCommercePriceEngineBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\SpecificationsType\\IbexaCommerceSpecificationsTypeBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\BaseDesign\\IbexaCommerceBaseDesignBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\FieldTypes\\IbexaCommerceFieldTypesBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\Checkout\\IbexaCommerceCheckoutBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\Commerce\\ShopUi\\IbexaCommerceShopUiBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": [
                         "all"
                     ],
@@ -279,12 +195,6 @@
                         "all"
                     ],
                     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": [
-                        "all"
-                    ],
-                    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": [
                         "all"
                     ]
                 },
@@ -321,6 +231,7 @@
                     "DATABASE_VERSION": "mariadb-10.3.0",
                     "SESSION_HANDLER_ID": "session.handler.native_file",
                     "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
+                    "SOLR_DSN": "http://localhost:8983/solr",
                     "SOLR_CORE": "collection1",
                     "#12": "Enable Personalization by setting valid id, key and uri",
                     "PERSONALIZATION_CUSTOMER_ID": 0,
@@ -331,20 +242,7 @@
                     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
                     "#15": "FASTLY_SERVICE_ID=\"\"",
                     "#16": "FASTLY_KEY=\"\"",
-                    "SISO_SEARCH_SOLR_HOST": "localhost",
-                    "SISO_SEARCH_SOLR_PORT": 8983,
-                    "SISO_SEARCH_SOLR_CORE": "collection1",
-                    "#17": "Do not add 'solr' to the path. It is automatically added by SolariumBundle",
-                    "SISO_SEARCH_SOLR_PATH": "",
-                    "#18": "SolariumBundle Solr DSN configuration",
-                    "#19": "Note that the /solr suffix will be appended automatically to Ibexa Solr Search Engine Bundle configuration",
-                    "SOLR_DSN": "http://${SISO_SEARCH_SOLR_HOST}:${SISO_SEARCH_SOLR_PORT}${SISO_SEARCH_SOLR_PATH}",
-                    "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e",
-                    "IBEXA_EDITION": "experience",
-                    "#20": "Default LOCK_DSN value (semaphore) makes project require additional 'sysvsem' PHP extension.",
-                    "#21": "If you have that extension feel free to reconfigure this env value back to 'semaphore'.",
-                    "#22": "'flock' is safe replacement and is backward compatible. Required by Symfony Rate Limiter.",
-                    "IBEXA_LOCK_DSN": "flock"
+                    "IBEXA_EDITION": "content"
                 },
                 "composer-scripts": {
                     "cache:clear": "symfony-cmd",
@@ -373,7 +271,7 @@
                     "To finish the installation process:",
                     "    1. Configure the database connection via <comment>DATABASE_URL</> in your <comment>.env</> file.",
                     "    2. Run the following commands:",
-                    "       >  <comment>composer recipes:install ibexa/experience --force</>",
+                    "       >  <comment>composer recipes:install ibexa/content --force</>",
                     "          <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.",
                     "       >  <comment>php bin/console ibexa:install</>",
                     "       >  <comment>php bin/console ibexa:graphql:generate-schema</>",
@@ -634,349 +532,6 @@
                     ],
                     "executable": false
                 },
-                "config/packages/commerce.yaml": {
-                    "contents": [
-                        "imports:",
-                        "    - { resource: commerce/autogenerated/*.yaml }",
-                        "    - { resource: commerce/commerce_parameters.yaml }",
-                        "    - { resource: commerce/commerce.yaml }",
-                        "    - { resource: '@IbexaProductCatalogBundle/Resources/config/bridge.yaml' }",
-                        "    - { resource: commerce/commerce_demo.yaml }",
-                        "    - { resource: commerce/commerce_common.yaml }",
-                        "    - { resource: commerce/commerce_advanced.yaml }",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/autogenerated/.gitkeep": {
-                    "contents": [
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header.png",
-                        "",
-                        "",
-                        "    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true",
-                        "",
-                        "    # Default settings for Commerce - will be overridden by backend config!",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.product_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.product_detail:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.slider_product_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.basket:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.basket_variant:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.stored_basket:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.wish_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order_line_preview:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.comparison:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.search_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        "    ibexa.commerce.site_access.config.price.default.price_service_chain.bestseller_list:",
-                        "        - Ibexa\\ProductCatalog\\Bridge\\PriceProvider",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_advanced.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png",
-                        "    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header-advanced.png",
-                        "",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.erp_connection: false",
-                        "    ibexa.commerce.site_access.config.order.management.local.default.send_order_to_erp: false",
-                        "    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true",
-                        "",
-                        "    # please set in backend configsection using the ERP URL for your ERP",
-                        "    ibexa.commerce.site_access.config.erp.default.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
-                        "    ibexa.commerce.erp.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
-                        "",
-                        "nelmio_solarium:",
-                        "    endpoints:",
-                        "        default:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: '%ibexa.commerce.search.solr.core%'",
-                        "        siso_core_admin:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: admin",
-                        "        siso_econtent:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: econtent",
-                        "        siso_econtent_back:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: econtent_back",
-                        "",
-                        "    clients:",
-                        "        default:",
-                        "            adapter_timeout: 30",
-                        "            endpoints:",
-                        "                - default",
-                        "        siso_core_admin:",
-                        "            adapter_timeout: 30",
-                        "        siso_econtent:",
-                        "            adapter_timeout: 30",
-                        "        siso_econtent_back:",
-                        "            adapter_timeout: 30",
-                        "        econtent:",
-                        "            endpoints:",
-                        "                - siso_econtent",
-                        "                - siso_econtent_back",
-                        "                - siso_core_admin",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_common.yaml": {
-                    "contents": [
-                        "# common parts",
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.search.de.facet_position: left",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.de.standard_price_factory.fallback_currency: EUR",
-                        "",
-                        "    ibexa.commerce.site_access.config.core.default.automatic_currency_conversion: true",
-                        "    ibexa.commerce.site_access.config.core.default.user_menu_bundles: ['IbexaCommerceEshopBundle','IbexaCommerceHistoryBundle']",
-                        "    ibexa.commerce.site_access.config.price.default.price_export.product_type_filter: [ses_product]",
-                        "    ibexa.commerce.site_access.config.core.default.breadcrumb_content_label_fields: ['name', 'title']",
-                        "",
-                        "    ibexa.commerce.site_access.config.seo.default.is_seo_bundle_enabled: false",
-                        "    ibexa.commerce.site_access.config.core.default.navigation.content:",
-                        "        types: [\"st_module\", \"folder\", \"article\", \"landing_page\", \"ses_productcatalog\"]",
-                        "        sections: [1, 2, 9]",
-                        "        enable_priority_zero: false",
-                        "        #additional field keys for translating navigation node label",
-                        "        label_fields: ['name', 'title']",
-                        "        additional_fields: ['intro', 'media', 'alternative_title', 'alternative_intro', 'alternative_image']",
-                        "    silver_eshop.default.path_prefix_seo: ''",
-                        "",
-                        "apache_tika:",
-                        "    path: '%apache_tika_path%'",
-                        "",
-                        "twig:",
-                        "    debug: '%kernel.debug%'",
-                        "    strict_variables: '%kernel.debug%'",
-                        "    form_themes:",
-                        "        - 'bootstrap_4_layout.html.twig'",
-                        "        - '@ibexadesign/Forms/form_div_layout.html.twig'",
-                        "",
-                        "jms_payment_core:",
-                        "    encryption:",
-                        "        provider: defuse_php_encryption",
-                        "        secret: '%env(JMS_PAYMENT_SECRET)%'",
-                        "        enabled: true",
-                        "",
-                        "stash:",
-                        "    caches:",
-                        "        default:",
-                        "            drivers:",
-                        "                - FileSystem",
-                        "            inMemory: true",
-                        "            registerDoctrineAdapter: false",
-                        "            FileSystem:",
-                        "                keyHashFunction: crc32",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_demo.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "",
-                        "    # ERP demo settings",
-                        "    ibexa.commerce.site_access.config.erp.de.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "    ibexa.commerce.site_access.config.erp.en.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "    ibexa.commerce.site_access.config.erp.admin.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
-                        "",
-                        "    # settings for ERP in order to use the right fallback customer numbers for customers without customer no",
-                        "    ibexa.commerce.core.template_debitor.customer_numbers:",
-                        "        #configuration for the zone",
-                        "        EU:",
-                        "            #configuration for the country",
-                        "            DE:",
-                        "                #customer groups possible:",
-                        "                #RBV: 10001",
-                        "                #more groups",
-                        "                #RBV_DVGW: 10002",
-                        "                #default if no customer groups available",
-                        "                default: 20000",
-                        "            #default value for the zone, if no country is specified",
-                        "            default: 40000",
-                        "        World:",
-                        "            default: 20000",
-                        "        #default value if no zone is specified",
-                        "        default: 20000",
-                        "",
-                        "",
-                        "    # facets for icecat demo products",
-                        "    ibexa.commerce.site_access.config.search.default.simple_facet_definitions:",
-                        "        download:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_is_download_value_b'",
-                        "        color:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_product_colour_value_s'",
-                        "        power:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_power_value_s'",
-                        "        product_type:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_product_type_value_s'",
-                        "        coffee_type:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_coffee_input_type_value_s'",
-                        "        beans:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_coffee_beans_capacity_value_s'",
-                        "        voltage:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_ac_input_voltage_value_s'",
-                        "        weight:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_weight_value_s'",
-                        "        pressure:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ext_pump_pressure_value_s'",
-                        "",
-                        "        price_range:",
-                        "            #possible values: single|multi_and|multi_or",
-                        "            filter_type: 'single'",
-                        "            #possible values: alpha|numeric|manual|range",
-                        "            sort_type: 'range'",
-                        "            #sort_type_order: 'XS|S|M|L|XL|XXL'",
-                        "            index_field: 'ext_ses_price_range_ms'",
-                        "            # ONLY VALID FOR THIS FACET",
-                        "            index_range_boundries: 0|10|20|50|100",
-                        "        manufacturer:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_datamap_ses_brand_value_s'",
-                        "        style:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_style_s'",
-                        "        variant_color:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_variant_color_ms'",
-                        "        variant_size:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_variant_size_ms'",
-                        "        category:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'location_parent_id_mid'",
-                        "            # ONLY VALID FOR THIS FACET",
-                        "            location_id_values: true",
-                        "        size:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_size_s'",
-                        "        availability:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_stock_numeric_value_s'",
-                        "        discontinued:",
-                        "            filter_type: 'single'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ses_product_ses_discontinued_value_b'",
-                        "        brand:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_brand_s'",
-                        "        temperature:",
-                        "            filter_type: 'multi_or'",
-                        "            sort_type: 'alpha'",
-                        "            index_field: 'ext_ses_spec_temperature_s'",
-                        "",
-                        "",
-                        "    #which facets will be used per group",
-                        "    ibexa.commerce.site_access.config.search.default.used_facets:",
-                        "        product_list:",
-                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
-                        "            specifications: ['style', 'size',  'temperature']",
-                        "            variants: ['variant_color', 'variant_size']",
-                        "        product:",
-                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
-                        "            specifications: ['style', 'size',  'temperature']",
-                        "            variants: ['variant_color', 'variant_size']",
-                        "",
-                        "",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/commerce/commerce_parameters.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    ibexa.commerce.site_access.config.core.default.ses_swiftmailer:",
-                        "        mailSender: noreply@ibexa.co",
-                        "        mailReceiver: noreply@ibexa.co",
-                        "        lostOrderEmailReceiver: noreply@ibexa.co",
-                        "        contactMailReceiver: noreply@ibexa.co",
-                        "        cancellationMailReceiver: noreply@ibexa.co",
-                        "        shopOwnerMailReceiver: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.forms.business.default_contact_recipient: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.order.sales_contact: noreply@ibexa.co",
-                        "    ibexa.commerce.eshop.lostorder_email: noreply@ibexa.co",
-                        "    ibexa.commerce.payment.paypal.receiver.email: noreply@ibexa.co",
-                        "",
-                        "    ibexa.commerce.core.site_access_group: ezdemo_site_clean_group",
-                        "    apache_tika_path: '%kernel.project_dir%/bin/tika-app-1.20.jar'",
-                        "",
-                        "    # commerce solr",
-                        "#    ibexa.commerce.search.solr.host: '%env(SISO_SEARCH_SOLR_HOST)%'",
-                        "#    ibexa.commerce.search.solr.port: '%env(SISO_SEARCH_SOLR_PORT)%'",
-                        "#    ibexa.commerce.search.solr.core: '%env(SISO_SEARCH_SOLR_CORE)%'",
-                        "#    ibexa.commerce.search.solr.path: '%env(SISO_SEARCH_SOLR_PATH)%'",
-                        "",
-                        "    one_sky_api_key: my-one-sky-key",
-                        "    one_sky_secret: my-onesky-password",
-                        "",
-                        "    ewz_recaptcha_public_key: public_key",
-                        "    ewz_recaptcha_private_key: private_key",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/dfs/dfs.yaml": {
                     "contents": [
                         "parameters:",
@@ -1063,17 +618,6 @@
                         "    # Session save path as used by symfony session handlers (eg. used for dsn with redis)",
                         "    #ibexa.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'",
                         "",
-                        "    # Trusted custom header name to be mapped to X_FORWARDED_FOR",
-                        "    #ibexa.trusted_header_client_ip_name: 'X-Custom-Client-Ip-Header'",
-                        "    #",
-                        "    ## Keep in mind you need will to configure the kernel.trusted_proxies option with",
-                        "    ## an IP address of your reverse proxy server to allow use of trusted headers",
-                        "    ##",
-                        "    ## framework:",
-                        "    ##     trusted_proxies: ['127.0.0.1']",
-                        "    ##",
-                        "    ## More information: https://symfony.com/doc/current/deployment/proxies.html",
-                        "",
                         "    # Predefined pools are located in config/packages/cache_pool/",
                         "    # You can add your own cache pool to the folder mentioned above.",
                         "    # In order to change the default cache_pool use environmental variable export.",
@@ -1120,12 +664,9 @@
                         "",
                         "    # Siteaccess configuration, with one siteaccess per default",
                         "    siteaccess:",
-                        "        list:",
-                        "            - site",
-                        "            - corporate",
+                        "        list: [site]",
                         "        groups:",
                         "            site_group: [site]",
-                        "            corporate_group: [corporate]",
                         "        default_siteaccess: site",
                         "        match:",
                         "            URIElement: 1",
@@ -1163,9 +704,6 @@
                         "        site:",
                         "            languages: [eng-GB]",
                         "",
-                        "        corporate_group:",
-                        "            languages: [eng-GB]",
-                        "",
                         "    url_alias:",
                         "        slug_converter:",
                         "            transformation: 'urlalias_lowercase'",
@@ -1177,17 +715,6 @@
                         "    esi: true",
                         "    fragments: true",
                         "    http_method_override: true",
-                        "",
-                        "    rate_limiter:",
-                        "        corporate_account_application:",
-                        "            policy: 'fixed_window'",
-                        "            limit: 1",
-                        "            interval: '5 minutes'",
-                        "            lock_factory: 'lock.corporate_account_application.factory'",
-                        "",
-                        "    lock:",
-                        "        default: '%env(LOCK_DSN)%'",
-                        "        corporate_account_application: '%env(IBEXA_LOCK_DSN)%'",
                         ""
                     ],
                     "executable": false
@@ -1217,14 +744,10 @@
                         "                    - 5 # Users",
                         "                    - 43 # Media",
                         "                    - 48 # Setup",
-                        "                    - 55 # Forms",
-                        "                    - 56 # Site skeletons",
-                        "                    - 60 # Components",
+                        "                    - 57 # Components",
                         "            subtree_paths:",
                         "                content: /1/2/",
                         "                media: /1/43/",
-                        "            page_builder:",
-                        "                siteaccess_list: [site]",
                         "            assets:",
                         "                icon_sets:",
                         "                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg",
@@ -1281,6 +804,7 @@
                         "        packages:",
                         "            ibexa:",
                         "                json_manifest_path: '%kernel.project_dir%/public/assets/ibexa/build/manifest.json'",
+                        "",
                         ""
                     ],
                     "executable": false
@@ -1337,20 +861,6 @@
                     ],
                     "executable": false
                 },
-                "config/packages/ibexa_form_builder.yaml": {
-                    "contents": [
-                        "jms_translation:",
-                        "    configs:",
-                        "        form_builder:",
-                        "            dirs:",
-                        "                - '%kernel.project_dir%/vendor/ibexa/form-builder/src'",
-                        "            output_dir: '%kernel.project_dir%/vendor/ibexa/form-builder/src/bundle/Resources/translations/'",
-                        "            excluded_dirs: [Behat, Tests]",
-                        "            output_format: \"xliff\"",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/ibexa_http_cache.yaml": {
                     "contents": [
                         "## FOSHttpCache Configuration",
@@ -1391,23 +901,6 @@
                     ],
                     "executable": false
                 },
-                "config/packages/ibexa_page_builder.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    ibexa.page_builder.token_authenticator.enabled: true",
-                        "",
-                        "jms_translation:",
-                        "    configs:",
-                        "        page_builder:",
-                        "            dirs:",
-                        "                - '%kernel.project_dir%/vendor/ibexa/page-builder/src'",
-                        "            output_dir: '%kernel.project_dir%/vendor/ibexa/page-builder/src/bundle/Resources/translations/'",
-                        "            excluded_dirs: [Behat, Tests]",
-                        "            output_format: \"xlf\"",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/ibexa_product_catalog.yaml": {
                     "contents": [
                         "ibexa_product_catalog:",
@@ -1421,53 +914,9 @@
                     ],
                     "executable": false
                 },
-                "config/packages/ibexa_site_factory.yaml": {
-                    "contents": [
-                        "parameters:",
-                        "    # Adds a fallback DATABASE_URL if the env var is not set.",
-                        "    # This allows you to run cache:warmup even if your",
-                        "    # environment variables are not available yet.",
-                        "    # You should not need to change this value.",
-                        "    env(DATABASE_URL): ''",
-                        "    env(DATABASE_DRIVER): ''",
-                        "    database_driver: '%env(DATABASE_DRIVER)%'",
-                        "",
-                        "ibexa_site_factory:",
-                        "    enabled: false",
-                        "#    templates:",
-                        "#        site_template:",
-                        "#            siteaccess_group: site_factory_group",
-                        "#            name: Example Site",
-                        "#            thumbnail: /bundles/ibexasitefactory/img/template-placeholder.png",
-                        "",
-                        "doctrine:",
-                        "    dbal:",
-                        "        connections:",
-                        "            # This connection is dedicated for SiteFactory to avoid known issues, should be the same as default",
-                        "            site_factory:",
-                        "                # configure these for your database server",
-                        "                driver: '%database_driver%'",
-                        "                charset: '%database_charset%'",
-                        "                default_table_options:",
-                        "                    charset: '%database_charset%'",
-                        "                    collate: '%database_collation%'",
-                        "                url: '%env(resolve:DATABASE_URL)%'",
-                        "",
-                        "framework:",
-                        "    cache:",
-                        "        pools:",
-                        "            # This pool should be used only by SiteFactory bundle",
-                        "            site_factory_pool:",
-                        "                # You can configure it according to your needs",
-                        "                adapter: cache.app",
-                        "                tags: true",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/ibexa_solr.yaml": {
                     "contents": [
-                        "# Base configuration for Solr, for more options see: https://doc.ezplatform.com/en/latest/guide/search/#solr-bundle",
+                        "# Base configuration for Solr, for more options see: https://doc.ibexa.co/en/latest/guide/search/search/#solr-bundle",
                         "# Can have several connections used by each Ibexa Repositories in ibexa.yaml",
                         "parameters:",
                         "    # Solr root endpoint, relevant if `solr` is set as search_engine",
@@ -1522,43 +971,6 @@
                     ],
                     "executable": false
                 },
-                "config/packages/lexik_jwt_authentication.yaml": {
-                    "contents": [
-                        "lexik_jwt_authentication:",
-                        "    secret_key: '%env(APP_SECRET)%'",
-                        "    encoder:",
-                        "        signature_algorithm: HS256",
-                        "    # Disabled by default, because Page builder use an custom extractor",
-                        "    token_extractors:",
-                        "        authorization_header:",
-                        "            enabled: false",
-                        "        cookie:",
-                        "            enabled: false",
-                        "        query_parameter:",
-                        "            enabled: false",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/nelmio_solarium.yaml": {
-                    "contents": [
-                        "nelmio_solarium:",
-                        "    endpoints:",
-                        "        default:",
-                        "            host: '%ibexa.commerce.search.solr.host%'",
-                        "            port: '%ibexa.commerce.search.solr.port%'",
-                        "            path: '%ibexa.commerce.search.solr.path%'",
-                        "            core: '%ibexa.commerce.search.solr.core%'",
-                        "",
-                        "    clients:",
-                        "        default:",
-                        "            adapter_timeout: 30",
-                        "            endpoints:",
-                        "                - default",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/security.yaml": {
                     "contents": [
                         "#security:",
@@ -1609,18 +1021,6 @@
                         "",
                         "        ibexa_register_from_invitation:",
                         "            pattern: /user/from-invite/register|/from-invite/register",
-                        "            security: false",
-                        "",
-                        "        ibexa_corporate_dev:",
-                        "            pattern: ^/corporate/(css|images|js)/",
-                        "            security: false",
-                        "",
-                        "        ibexa_corporate_customer_portal_register:",
-                        "            pattern: ^/corporate/customer-portal/register",
-                        "            security: false",
-                        "",
-                        "        ibexa_corporate_fieldtype_address:",
-                        "            pattern: ^/corporate/address/form/",
                         "            security: false",
                         "",
                         "        # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector",
@@ -1681,8 +1081,6 @@
                         "            form_login:",
                         "                require_previous_session: false",
                         "                csrf_token_generator: security.csrf.token_manager",
-                        "            guard:",
-                        "                authenticator: 'Ibexa\\PageBuilder\\Security\\EditorialMode\\TokenAuthenticator'",
                         "            logout: ~",
                         "",
                         "        main:",
@@ -1755,32 +1153,6 @@
                     ],
                     "executable": false
                 },
-                "config/routes/ibexa_commerce.yaml": {
-                    "contents": [
-                        "ibexa.commerce.eshop:",
-                        "    resource: \"@IbexaCommerceEshopBundle/Resources/config/ses_routing.yml\"",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.tools:",
-                        "    resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.translation:",
-                        "    resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.checkout:",
-                        "    resource: '@IbexaCommerceCheckoutBundle/Resources/config/routing.yaml'",
-                        "    prefix: /",
-                        "",
-                        "ibexa.commerce.search:",
-                        "    resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'",
-                        "    prefix: /",
-                        "",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/routes/ibexa_connector_dam.yaml": {
                     "contents": [
                         "ibexa.connector_dam:",
@@ -1801,53 +1173,10 @@
                     ],
                     "executable": false
                 },
-                "config/routes/ibexa_corporate_account.yaml": {
-                    "contents": [
-                        "ibexa.corporate_account:",
-                        "    resource: '@IbexaCorporateAccountBundle/Resources/config/routing_admin_ui.yaml'",
-                        "",
-                        "ibexa.corporate_account.customer_portal:",
-                        "    resource: '@IbexaCorporateAccountBundle/Resources/config/routing_customer_portal.yaml'",
-                        "    defaults:",
-                        "        siteaccess_group_whitelist: 'corporate_group'",
-                        "",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_fieldtype_address.yaml": {
-                    "contents": [
-                        "ibexa.field_type_address:",
-                        "    resource: '@IbexaFieldTypeAddressBundle/Resources/config/routing.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_fieldtype_page.yaml": {
-                    "contents": [
-                        "ibexa.field_type_page:",
-                        "    resource: '@IbexaFieldTypePageBundle/Resources/config/routing.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/routes/ibexa_fieldtype_query.yaml": {
                     "contents": [
                         "ibexa.field_type_query:",
                         "    resource: '@IbexaFieldTypeQueryBundle/Resources/config/routing/rest.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_form_builder.yaml": {
-                    "contents": [
-                        "ibexa.form_builder:",
-                        "    resource: '@IbexaFormBuilderBundle/Resources/config/routing.yaml'",
-                        "    defaults:",
-                        "        siteaccess_group_whitelist: '%admin_group_name%'",
-                        "",
-                        "ibexa.form_builder.captcha:",
-                        "    resource: '@IbexaFormBuilderBundle/Resources/config/captcha_routing.yaml'",
                         ""
                     ],
                     "executable": false
@@ -1872,19 +1201,6 @@
                     "contents": [
                         "ibexa.oauth2_client:",
                         "  resource: '@IbexaOAuth2ClientBundle/Resources/config/routing.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_page_builder.yaml": {
-                    "contents": [
-                        "ibexa.page_builder:",
-                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing.yaml'",
-                        "    defaults:",
-                        "        siteaccess_group_whitelist: '%admin_group_name%'",
-                        "",
-                        "ibexa.page_builder_preview:",
-                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_preview.yaml'",
                         ""
                     ],
                     "executable": false
@@ -1950,26 +1266,6 @@
                     "contents": [
                         "ibexa.search:",
                         "    resource: '@IbexaSearchBundle/Resources/config/routing.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_segmentation.yaml": {
-                    "contents": [
-                        "ibexa.segmentation:",
-                        "    resource: '@IbexaSegmentationBundle/Resources/config/routing.yaml'",
-                        "",
-                        "ibexa.segmentation.rest:",
-                        "    resource: '@IbexaSegmentationBundle/Resources/config/routing_rest.yaml'",
-                        "    prefix: '%ibexa.rest.path_prefix%'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_site_factory.yaml": {
-                    "contents": [
-                        "ibexa.site_factory:",
-                        "    resource: '@IbexaSiteFactoryBundle/Resources/config/routing.yaml'",
                         ""
                     ],
                     "executable": false
@@ -2179,12 +1475,12 @@
                         "    \"raw-loader\": \"^4.0.1\",",
                         "    \"style-loader\": \"^2.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
-                        "    \"@ckeditor/ckeditor5-alignment\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-build-inline\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^30.0.0\",",
-                        "    \"@ckeditor/ckeditor5-widget\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-code-block\": \"^34.1.0\"",
+                        "    \"@ckeditor/ckeditor5-alignment\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-build-inline\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^31.0.0\",",
+                        "    \"@ckeditor/ckeditor5-widget\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-code-block\": \"^35.3.2\"",
                         "  },",
                         "  \"license\": \"UNLICENSED\",",
                         "  \"private\": true,",
@@ -2265,142 +1561,142 @@
                         "{% endblock %}",
                         "",
                         "{% block content %}",
-                        "    <header>",
-                        "        <div class=\"container-fluid container--wide\">",
-                        "            <div class=\"row\">",
-                        "                <div class=\"col-12\">",
-                        "                    <div class=\"py-4\">",
-                        "                        <img src=\"{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}\" alt=\"Ibexa\" class=\"logo\">",
-                        "                    </div>",
+                        "<header>",
+                        "    <div class=\"container-fluid container--wide\">",
+                        "        <div class=\"row\">",
+                        "            <div class=\"col-12\">",
+                        "                <div class=\"py-4\">",
+                        "                     <img src=\"{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}\" alt=\"Ibexa\" class=\"logo\">",
                         "                </div>",
                         "            </div>",
                         "        </div>",
-                        "        <div class=\"container-fluid header__container\">",
-                        "            <div class=\"container h-100 text-center text-white d-flex flex-column align-items-center justify-content-center\">",
-                        "                <h1>",
-                        "                    {{ 'ibexa_platform_welcome_page.welcome_to'|trans|desc('Welcome to') }}<br>",
-                        "                    {{ ibexa_render_field(content, 'name') }}",
-                        "                    {{ constant('Ibexa\\\\Contracts\\\\Core\\\\Ibexa::VERSION') }}",
-                        "                </h1>",
-                        "                <div class=\"pt-5\">",
-                        "                    <strong>{{ ibexa_render_field(content, 'description') }}</strong>",
-                        "                    <p class=\"mb-0\">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to:\u00a0%target%') }}</p>",
+                        "    </div>",
+                        "    <div class=\"container-fluid header__container\">",
+                        "        <div class=\"container h-100 text-center text-white d-flex flex-column align-items-center justify-content-center\">",
+                        "            <h1>",
+                        "                {{ 'ibexa_platform_welcome_page.welcome_to'|trans|desc('Welcome to') }}<br>",
+                        "                {{ ibexa_render_field(content, 'name') }}",
+                        "                {{ constant('Ibexa\\\\Contracts\\\\Core\\\\Ibexa::VERSION') }}",
+                        "            </h1>",
+                        "            <div class=\"pt-5\">",
+                        "                {{ ibexa_render_field(content, 'short_description') }}",
+                        "                <p class=\"mb-0\">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to:\u00a0%target%') }}</p>",
                         "",
-                        "                    {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}",
-                        "                    <p class=\"mb-0\">",
-                        "                        {{ 'ibexa_platform_welcome_page.create_new_content_at'|trans({'%target%': '<a href=\"' ~ admin_url ~ '\" class=\"text-white\"><u>' ~ admin_url ~ '</u></a>' })",
-                        "                        |desc('Create new content at %target%')|raw }}",
-                        "                    </p>",
+                        "                {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}",
+                        "                <p class=\"mb-0\">",
+                        "                    {{ 'ibexa_platform_welcome_page.create_new_content_at'|trans({'%target%': '<a href=\"' ~ admin_url ~ '\" class=\"text-white\"><u>' ~ admin_url ~ '</u></a>' })",
+                        "                    |desc('Create new content at %target%')|raw }}",
+                        "                </p>",
+                        "            </div>",
+                        "        </div>",
+                        "    </div>",
+                        "</header>",
+                        "<div class=\"page pb-4\">",
+                        "    <div class=\"container-fluid background-grey pb-3\">",
+                        "        <div class=\"row py-3\">",
+                        "            <div class=\"col-12 py-3\">",
+                        "                <div class=\"container text-center description\">",
+                        "                    {{ ibexa_render_field(content, 'description') }}",
                         "                </div>",
                         "            </div>",
                         "        </div>",
-                        "    </header>",
-                        "    <div class=\"page pb-4\">",
-                        "        <div class=\"container-fluid background-grey pb-3\">",
-                        "            <div class=\"row py-3\">",
-                        "                <div class=\"col-12 py-3\">",
-                        "                    <div class=\"container text-center description\">",
-                        "                        {{ ibexa_render_field(content, 'page') }}",
+                        "    </div>",
+                        "    <div class=\"container-fluid container--wide mt-5 references px-5\">",
+                        "        <div class=\"row\">",
+                        "            <div class=\"col-lg-4 col-md-6 col-sm-12\">",
+                        "                <div class=\"d-flex flex-row justify-content-center\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/file-text-info-icon.svg') }}\" alt=\"File text info icon\">",
+                        "                    </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.documentation'|trans|desc('Documentation') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ibexa.co/documentation-center\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.documentation_center'|trans|desc('Documentation center') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/projects/userguide\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.user_documentation'|trans|desc('User documentation') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.developer_documentation'|trans|desc('Developer documentation') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                        </ul>",
                         "                    </div>",
                         "                </div>",
                         "            </div>",
-                        "        </div>",
-                        "        <div class=\"container-fluid container--wide mt-5 references px-5\">",
-                        "            <div class=\"row\">",
-                        "                <div class=\"col-lg-4 col-md-6 col-sm-12\">",
-                        "                    <div class=\"d-flex flex-row justify-content-center\">",
-                        "                        <div class=\"mr-3\">",
-                        "                            <img src=\"{{ asset('build/images/file-text-info-icon.svg') }}\" alt=\"File text info icon\">",
-                        "                        </div>",
-                        "                        <div>",
-                        "                            <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.documentation'|trans|desc('Documentation') }}</h2>",
-                        "                            <ul class=\"list-unstyled references-list\">",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://ibexa.co/documentation-center\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.documentation_center'|trans|desc('Documentation center') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://doc.ibexa.co/projects/userguide\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.user_documentation'|trans|desc('User documentation') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://doc.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.developer_documentation'|trans|desc('Developer documentation') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                            </ul>",
-                        "                        </div>",
+                        "            <div class=\"col-lg-4 col-md-6 mt-5 mt-md-0\">",
+                        "                <div class=\"d-flex flex-row justify-content-center\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/folder-icon.svg') }}\" alt=\"Folder icon\">",
+                        "                    </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.tutorials_and_resources'|trans|desc('Tutorials and resources') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/getting_started/first_steps\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.getting_started'|trans|desc('Getting started') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/tutorials/platform_beginner/building_a_bicycle_route_tracker_in_ez_platform\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.tutorials'|trans|desc('Tutorials') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"http://doc.ibexa.co/rest-api-reference\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.rest_api_reference'|trans|desc('REST API reference') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/api/public_php_api\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.public_php_api'|trans|desc('Public PHP API') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li>",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/api/graphql\" class=\"references-list-item__link\" target=\"_blank\">GraphQL</a>",
+                        "                            </li>",
+                        "                        </ul>",
                         "                    </div>",
                         "                </div>",
-                        "                <div class=\"col-lg-4 col-md-6 mt-5 mt-md-0\">",
-                        "                    <div class=\"d-flex flex-row justify-content-center\">",
-                        "                        <div class=\"mr-3\">",
-                        "                            <img src=\"{{ asset('build/images/folder-icon.svg') }}\" alt=\"Folder icon\">",
-                        "                        </div>",
-                        "                        <div>",
-                        "                            <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.tutorials_and_resources'|trans|desc('Tutorials and resources') }}</h2>",
-                        "                            <ul class=\"list-unstyled references-list\">",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://doc.ibexa.co/en/latest/getting_started/first_steps\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.getting_started'|trans|desc('Getting started') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://doc.ibexa.co/en/latest/tutorials/platform_beginner/building_a_bicycle_route_tracker_in_ez_platform\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.tutorials'|trans|desc('Tutorials') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"http://doc.ibexa.co/rest-api-reference\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.rest_api_reference'|trans|desc('REST API reference') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://doc.ibexa.co/en/latest/api/public_php_api\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.public_php_api'|trans|desc('Public PHP API') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li>",
-                        "                                    <a href=\"https://doc.ibexa.co/en/latest/api/graphql\" class=\"references-list-item__link\" target=\"_blank\">GraphQL</a>",
-                        "                                </li>",
-                        "                            </ul>",
-                        "                        </div>",
+                        "            </div>",
+                        "            <div class=\"col-lg-4 col-md-6 mt-lg-0 mt-5\">",
+                        "                <div class=\"d-flex flex-row justify-content-center mr-auto\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/conversation-chat-icon.svg') }}\" alt=\"Conversation chat icon\">",
                         "                    </div>",
-                        "                </div>",
-                        "                <div class=\"col-lg-4 col-md-6 mt-lg-0 mt-5\">",
-                        "                    <div class=\"d-flex flex-row justify-content-center mr-auto\">",
-                        "                        <div class=\"mr-3\">",
-                        "                            <img src=\"{{ asset('build/images/conversation-chat-icon.svg') }}\" alt=\"Conversation chat icon\">",
-                        "                        </div>",
-                        "                        <div>",
-                        "                            <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.forums_and_community'|trans|desc('Forums and community') }}</h2>",
-                        "                            <ul class=\"list-unstyled references-list\">",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://discuss.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.discussion_forum'|trans|desc('Discussion forum') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://ez-community-on-slack.herokuapp.com/\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.community_slack_channel'|trans|desc('Community Slack channel') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                                <li class=\"references-list-item\">",
-                        "                                    <a href=\"https://ibexa.co/blog\" class=\"references-list-item__link\" target=\"_blank\">",
-                        "                                        {{ 'ibexa_platform_welcome_page.ibexa_blog'|trans|desc('Ibexa blog') }}",
-                        "                                    </a>",
-                        "                                </li>",
-                        "                            </ul>",
-                        "                        </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.forums_and_community'|trans|desc('Forums and community') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://discuss.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.discussion_forum'|trans|desc('Discussion forum') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ez-community-on-slack.herokuapp.com/\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.community_slack_channel'|trans|desc('Community Slack channel') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ibexa.co/blog\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.ibexa_blog'|trans|desc('Ibexa blog') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                        </ul>",
                         "                    </div>",
                         "                </div>",
                         "            </div>",
                         "        </div>",
                         "    </div>",
-                        "    <footer class=\"footer pb-3\">",
-                        "        <div class=\"container-fluid container--wide\">",
+                        "</div>",
+                        "<footer class=\"footer pb-3\">",
+                        "    <div class=\"container-fluid container--wide\">",
                         "        <span class=\"copyright\">",
                         "        {{ 'ibexa_platform_welcome_page.copyright'|trans({",
                         "            '%ibexa_link_open%': '<a href=\"http://ibexa.co\" target=\"_blank\">',",
@@ -2408,8 +1704,8 @@
                         "            '%current_year%': \"now\"|date(\"Y\")",
                         "        }) |desc('Ibexa Digital Experience Platform \u00a9 %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others')|raw }}",
                         "        </span>",
-                        "        </div>",
-                        "    </footer>",
+                        "    </div>",
+                        "</footer>",
                         "{% endblock %}",
                         ""
                     ],
@@ -2549,7 +1845,7 @@
                     "executable": false
                 }
             },
-            "ref": "7c19a6af31eadcfe1ac9ff0929512c21d3727029"
+            "ref": "19d5e065cb9da53b316bc7aae213e0ec3c3b6a95"
         }
     }
 }

@@ -1159,12 +1159,12 @@
                         "    \"raw-loader\": \"^4.0.1\",",
                         "    \"style-loader\": \"^2.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
-                        "    \"@ckeditor/ckeditor5-alignment\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-build-inline\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^30.0.0\",",
-                        "    \"@ckeditor/ckeditor5-widget\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^34.1.0\",",
-                        "    \"@ckeditor/ckeditor5-code-block\": \"^34.1.0\"",
+                        "    \"@ckeditor/ckeditor5-alignment\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-build-inline\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^31.0.0\",",
+                        "    \"@ckeditor/ckeditor5-widget\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^35.3.2\",",
+                        "    \"@ckeditor/ckeditor5-code-block\": \"^35.3.2\"",
                         "  },",
                         "  \"license\": \"UNLICENSED\",",
                         "  \"private\": true,",
@@ -1531,7 +1531,7 @@
                     "executable": false
                 }
             },
-            "ref": "df4816de17e19c471e443d443b8c176d9086f0dc"
+            "ref": "3188c8c2c675eb22d64cd462138627a8ecc83131"
         }
     }
 }
