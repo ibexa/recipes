@@ -68,6 +68,8 @@ ibexa:
                 connection: default
             product_catalog:
                 engine: default
+                regions:
+                    default: ~
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
@@ -78,6 +80,7 @@ ibexa:
             - corporate
         groups:
             site_group: [import, site]
+            storefront_group: [site]
             corporate_group: [corporate]
         default_siteaccess: site
         match:
@@ -104,6 +107,10 @@ ibexa:
             http_cache:
                 purge_servers: ['%purge_server%']
                 varnish_invalidate_token: '%varnish_invalidate_token%'
+
+            # Indicates which handler is used to generate image variations, like `alias` for built-in
+            # or `fastly` for Fastly Image Optimizer or else if you use custom one.
+            variation_handler_identifier: '%env(string:IBEXA_VARIATION_HANDLER_IDENTIFIER)%'
 
             assets:
                 icon_sets:
