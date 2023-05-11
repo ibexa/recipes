@@ -24,9 +24,13 @@
                         "#            cdp:",
                         "#                # Account number can be obtained from Accounts settings in Ibexa CDP dashboard",
                         "#                account_number: 123456",
-                        "#                user_data_streaming:",
-                        "#                    # Use Stream ID generated during data import from \"stream file\" in Data Manager",
-                        "#                    stream_id: 00000000-00000000-00000000-00000000",
+                        "#                data_export:",
+                        "#                    user_data:",
+                        "#                        transport: stream_file",
+                        "#                        stream_file:",
+                        "#                            # Use Stream ID generated during data import from \"stream file\" in Data Manager",
+                        "#                            stream_id: 00000000-00000000-00000000-00000000",
+                        "#",
                         "#                # You can configure multiple activations here. They have to be of type \"Ibexa\" in Ibexa DXP dashboard.",
                         "#                activations:",
                         "#                    -",
@@ -48,7 +52,7 @@
                     "executable": false
                 }
             },
-            "ref": "dfad060e6c946f726b0ae44b22c45bfe8f9ea765"
+            "ref": "fe03a24bab0002ee80fe602cb61af387ef9c720d"
         }
     }
 }
