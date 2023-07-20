@@ -76,10 +76,11 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/compatibility-layer](https://packagist.org/packages/ibexa/compatibility-layer) | [4.6](ibexa/compatibility-layer/4.6) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [4.6](ibexa/connector-dam/4.6) |  |
 | [ibexa/connector-unsplash](https://packagist.org/packages/ibexa/connector-unsplash) | [4.6](ibexa/connector-unsplash/4.6) |  |
-| [ibexa/content](https://packagist.org/packages/ibexa/content) | [4.6](ibexa/content/4.6) | `cms-content`, `cmscontent`, `content`, `dxp-content`, `dxpcontent`, `ibexa-content`, `ibexacontent` |
+| [ibexa/content](https://packagist.org/packages/ibexa/content) | [4.5](ibexa/content/4.5) | `cms-content`, `cmscontent`, `content`, `dxp-content`, `dxpcontent`, `ibexa-content`, `ibexacontent` |
 | [ibexa/content-forms](https://packagist.org/packages/ibexa/content-forms) | [4.6](ibexa/content-forms/4.6) |  |
 | [ibexa/content-tree](https://packagist.org/packages/ibexa/content-tree) | [4.6](ibexa/content-tree/4.6) |  |
 | [ibexa/core](https://packagist.org/packages/ibexa/core) | [4.6](ibexa/core/4.6) |  |
+| [ibexa/core-persistence](https://packagist.org/packages/ibexa/core-persistence) | [4.6](ibexa/core-persistence/4.6) |  |
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.6](ibexa/corporate-account/4.6) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.6](ibexa/cron/4.6) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.6](ibexa/design-engine/4.6) |  |
@@ -95,6 +96,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/fieldtype-richtext](https://packagist.org/packages/ibexa/fieldtype-richtext) | [4.6](ibexa/fieldtype-richtext/4.6) |  |
 | [ibexa/form-builder](https://packagist.org/packages/ibexa/form-builder) | [4.6](ibexa/form-builder/4.6) |  |
 | [ibexa/graphql](https://packagist.org/packages/ibexa/graphql) | [4.6](ibexa/graphql/4.6) |  |
+| [ibexa/headless](https://packagist.org/packages/ibexa/headless) | [4.6](ibexa/headless/4.6) | `cms-headless`, `cmsheadless`, `dxp-headless`, `dxpheadless`, `headless`, `ibexa-headless`, `ibexaheadless` |
 | [ibexa/http-cache](https://packagist.org/packages/ibexa/http-cache) | [4.6](ibexa/http-cache/4.6) |  |
 | [ibexa/icons](https://packagist.org/packages/ibexa/icons) | [4.6](ibexa/icons/4.6) |  |
 | [ibexa/image-editor](https://packagist.org/packages/ibexa/image-editor) | [4.6](ibexa/image-editor/4.6) |  |
@@ -103,6 +105,8 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [4.6](ibexa/migrations/4.6) |  |
 | [ibexa/namespace-compatibility](https://packagist.org/packages/ibexa/namespace-compatibility) | [1.0](ibexa/namespace-compatibility/1.0) |  |
 | [ibexa/oauth2-client](https://packagist.org/packages/ibexa/oauth2-client) | [4.6](ibexa/oauth2-client/4.6) |  |
+| [ibexa/oauth2-server](https://packagist.org/packages/ibexa/oauth2-server) | [4.6](ibexa/oauth2-server/4.6) |  |
+| [ibexa/oauth2-server-bundle](https://packagist.org/packages/ibexa/oauth2-server-bundle) | [0.6](ibexa/oauth2-server-bundle/0.6) |  |
 | [ibexa/order-management](https://packagist.org/packages/ibexa/order-management) | [4.6](ibexa/order-management/4.6) |  |
 | [ibexa/oss](https://packagist.org/packages/ibexa/oss) | [4.6](ibexa/oss/4.6) | `cms`, `ibexa`, `ibexa-oss`, `ibexaoss` |
 | [ibexa/page-builder](https://packagist.org/packages/ibexa/page-builder) | [4.6](ibexa/page-builder/4.6) |  |
