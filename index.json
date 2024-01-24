@@ -1,5 +1,6 @@
 {
     "aliases": {
+        "actito": "ibexa/connector-actito",
         "cdp": "ibexa/cdp",
         "cms": "ibexa/oss",
         "cms-commerce": "ibexa/commerce",
@@ -25,12 +26,14 @@
         "ibexa": "ibexa/oss",
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
+        "ibexa-connector-actito": "ibexa/connector-actito",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
         "ibexa-headless": "ibexa/headless",
         "ibexa-oss": "ibexa/oss",
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
+        "ibexaconnectoractito": "ibexa/connector-actito",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
         "ibexaheadless": "ibexa/headless",
@@ -185,6 +188,9 @@
         ],
         "ezsystems/ezrecommendation-client": [
             "2.0"
+        ],
+        "ibexa/activity-log": [
+            "4.6"
         ],
         "ibexa/admin-ui": [
             "4.0",
@@ -367,6 +373,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/connector-actito": [
+            "4.6"
+        ],
         "ibexa/connector-dam": [
             "4.0",
             "4.1",
@@ -374,6 +383,9 @@
             "4.3",
             "4.4",
             "4.5",
+            "4.6"
+        ],
+        "ibexa/connector-payum": [
             "4.6"
         ],
         "ibexa/connector-unsplash": [
@@ -431,6 +443,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/corporate-account-commerce-bridge": [
+            "4.6"
+        ],
         "ibexa/cron": [
             "4.0",
             "4.1",
@@ -438,6 +453,9 @@
             "4.3",
             "4.4",
             "4.5",
+            "4.6"
+        ],
+        "ibexa/dashboard": [
             "4.6"
         ],
         "ibexa/design-engine": [
@@ -588,6 +606,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/image-picker": [
+            "4.6"
+        ],
         "ibexa/installer": [
             "4.0",
             "4.1",
@@ -616,6 +637,9 @@
         ],
         "ibexa/namespace-compatibility": [
             "1.0"
+        ],
+        "ibexa/notifications": [
+            "4.6"
         ],
         "ibexa/oauth2-client": [
             "4.0",
@@ -742,6 +766,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/site-context": [
+            "4.6"
+        ],
         "ibexa/site-factory": [
             "4.0",
             "4.1",
@@ -789,6 +816,10 @@
             "4.2",
             "4.3",
             "4.4",
+            "4.5",
+            "4.6"
+        ],
+        "ibexa/test-fixtures": [
             "4.5",
             "4.6"
         ],
