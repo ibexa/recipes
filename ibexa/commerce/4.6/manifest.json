@@ -54,6 +54,7 @@
     "Ibexa\\Bundle\\Search\\IbexaSearchBundle": ["all"],
     "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": ["all"],
     "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
+    "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
@@ -80,7 +81,14 @@
     "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": ["all"],
     "Ibexa\\Bundle\\OrderManagement\\IbexaOrderManagementBundle": ["all"],
     "Ibexa\\Bundle\\Payment\\IbexaPaymentBundle": ["all"],
-    "Ibexa\\Bundle\\Shipping\\IbexaShippingBundle": ["all"]
+    "Ibexa\\Bundle\\Shipping\\IbexaShippingBundle": ["all"],
+    "Ibexa\\Bundle\\CorporateAccountCommerceBridge\\IbexaCorporateAccountCommerceBridgeBundle": ["all"],
+    "Payum\\Bundle\\PayumBundle\\PayumBundle": ["all"],
+    "Ibexa\\Bundle\\ConnectorPayum\\IbexaConnectorPayumBundle": ["all"],
+    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"],
+    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"],
+    "Ibexa\\Bundle\\Dashboard\\IbexaDashboardBundle": ["all"],
+    "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",

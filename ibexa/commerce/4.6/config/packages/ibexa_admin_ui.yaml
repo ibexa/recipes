@@ -27,6 +27,7 @@ ibexa:
                     - 55 # Forms
                     - 56 # Site skeletons
                     - 60 # Components
+                    - 67 # Dashboards
             subtree_paths:
                 content: /1/2/
                 media: /1/43/
@@ -71,5 +72,11 @@ ibexa:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
                 default-config:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
-            user_content_type_identifier: ['user', 'customer', 'member']
+            user_content_type_identifier: ['user', 'customer', 'member', 'editor']
+            user_profile:
+                enabled: true
+                content_types: ['editor']
+                field_groups: ['about', 'contact']
             default_page: 'dashboard'
+            content:
+                default_ttl: 0

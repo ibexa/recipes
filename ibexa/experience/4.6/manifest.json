@@ -61,6 +61,7 @@
     "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
     "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
+    "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
@@ -73,7 +74,11 @@
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
     "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": ["all"],
-    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"]
+    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"],
+    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"],
+    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"],
+    "Ibexa\\Bundle\\Dashboard\\IbexaDashboardBundle": ["all"],
+    "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
