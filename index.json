@@ -213,6 +213,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/app-switcher": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/behat": [
             "4.0",
             "4.1",
@@ -410,6 +414,10 @@
             "5.0"
         ],
         "ibexa/connector-payum": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-qualifio": [
             "4.6",
             "5.0"
         ],
@@ -624,6 +632,10 @@
             "5.0"
         ],
         "ibexa/headless": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/headless-assets": [
             "4.6",
             "5.0"
         ],
