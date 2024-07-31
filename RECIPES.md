@@ -77,7 +77,9 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/commerce-transaction](https://packagist.org/packages/ibexa/commerce-transaction) | [5.0](ibexa/commerce-transaction/5.0) |  |
 | [ibexa/compatibility-layer](https://packagist.org/packages/ibexa/compatibility-layer) | [5.0](ibexa/compatibility-layer/5.0) |  |
 | [ibexa/connector-actito](https://packagist.org/packages/ibexa/connector-actito) | [5.0](ibexa/connector-actito/5.0) | `actito`, `ibexa-connector-actito`, `ibexaconnectoractito` |
+| [ibexa/connector-ai](https://packagist.org/packages/ibexa/connector-ai) | [5.0](ibexa/connector-ai/5.0) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [5.0](ibexa/connector-dam/5.0) |  |
+| [ibexa/connector-openai](https://packagist.org/packages/ibexa/connector-openai) | [5.0](ibexa/connector-openai/5.0) |  |
 | [ibexa/connector-payum](https://packagist.org/packages/ibexa/connector-payum) | [5.0](ibexa/connector-payum/5.0) |  |
 | [ibexa/connector-qualifio](https://packagist.org/packages/ibexa/connector-qualifio) | [5.0](ibexa/connector-qualifio/5.0) |  |
 | [ibexa/connector-unsplash](https://packagist.org/packages/ibexa/connector-unsplash) | [5.0](ibexa/connector-unsplash/5.0) |  |
@@ -89,6 +91,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [5.0](ibexa/corporate-account/5.0) |  |
 | [ibexa/corporate-account-commerce-bridge](https://packagist.org/packages/ibexa/corporate-account-commerce-bridge) | [5.0](ibexa/corporate-account-commerce-bridge/5.0) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [5.0](ibexa/cron/5.0) |  |
+| [ibexa/dam-user](https://packagist.org/packages/ibexa/dam-user) | [5.0](ibexa/dam-user/5.0) |  |
 | [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [5.0](ibexa/dashboard/5.0) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [5.0](ibexa/design-engine/5.0) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [5.0](ibexa/docker/5.0) |  |
