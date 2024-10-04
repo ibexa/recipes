@@ -89,6 +89,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/content-tree](https://packagist.org/packages/ibexa/content-tree) | [5.0](ibexa/content-tree/5.0) |  |
 | [ibexa/core](https://packagist.org/packages/ibexa/core) | [5.0](ibexa/core/5.0) |  |
 | [ibexa/core-persistence](https://packagist.org/packages/ibexa/core-persistence) | [5.0](ibexa/core-persistence/5.0) |  |
+| [ibexa/core-search](https://packagist.org/packages/ibexa/core-search) | [5.0](ibexa/core-search/5.0) |  |
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [5.0](ibexa/corporate-account/5.0) |  |
 | [ibexa/corporate-account-commerce-bridge](https://packagist.org/packages/ibexa/corporate-account-commerce-bridge) | [5.0](ibexa/corporate-account-commerce-bridge/5.0) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [5.0](ibexa/cron/5.0) |  |
@@ -129,6 +130,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [5.0](ibexa/personalization/5.0) |  |
 | [ibexa/personalization-client](https://packagist.org/packages/ibexa/personalization-client) | [5.0](ibexa/personalization-client/5.0) |  |
 | [ibexa/product-catalog](https://packagist.org/packages/ibexa/product-catalog) | [5.0](ibexa/product-catalog/5.0) |  |
+| [ibexa/product-catalog-symbol-attribute](https://packagist.org/packages/ibexa/product-catalog-symbol-attribute) | [5.0](ibexa/product-catalog-symbol-attribute/5.0) |  |
 | [ibexa/rector](https://packagist.org/packages/ibexa/rector) | [5.0](ibexa/rector/5.0) |  |
 | [ibexa/rest](https://packagist.org/packages/ibexa/rest) | [5.0](ibexa/rest/5.0) |  |
 | [ibexa/scheduler](https://packagist.org/packages/ibexa/scheduler) | [5.0](ibexa/scheduler/5.0) |  |

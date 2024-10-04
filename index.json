@@ -486,6 +486,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/core-search": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/corporate-account": [
             "4.2",
             "4.3",
@@ -810,6 +814,10 @@
             "4.3",
             "4.4",
             "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/product-catalog-symbol-attribute": [
             "4.6",
             "5.0"
         ],
