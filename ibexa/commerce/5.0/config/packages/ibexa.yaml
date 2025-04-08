@@ -136,7 +136,7 @@ ibexa:
             user_content_type_identifier: ['customer']
             user_registration:
                 user_type_identifier: 'customer'
-                group_id: 57
+                group_remote_id: ibexa_customer_group
 
         corporate_group:
             languages: [eng-GB]
@@ -147,7 +147,7 @@ ibexa:
 
 framework:
     translator: { fallback: '%locale_fallback%' }
-    validation: { enable_annotations: true }
+    validation: { enable_attributes: true }
     default_locale: '%locale_fallback%'
     esi: true
     fragments: true
