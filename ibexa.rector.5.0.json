@@ -4,10 +4,40 @@
             "manifest": {
                 "bundles": [],
                 "copy-from-recipe": {
+                    "rector.config.js": "rector.config.js",
                     "rector.php": "rector.php"
                 }
             },
             "files": {
+                "rector.config.js": {
+                    "contents": [
+                        "module.exports = {",
+                        "    config: {",
+                        "        paths: [",
+                        "            {",
+                        "                input: 'src/bundle/Resources/public',",
+                        "                output: 'src/bundle/Resources/public',",
+                        "            },",
+                        "            {",
+                        "                input: 'src/bundle/ui-dev/src/modules',",
+                        "                output: 'src/bundle/ui-dev/src/modules',",
+                        "            },",
+                        "        ],",
+                        "        // prettierConfigPath: 'pathToPrettierConfigFile',",
+                        "    },",
+                        "    plugins: (plugins) => {",
+                        "        // modify enabled plugins",
+                        "        return plugins;",
+                        "    },",
+                        "    pluginsConfig: (config) => {",
+                        "        // modify plugins config",
+                        "        return config;",
+                        "    },",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "rector.php": {
                     "contents": [
                         "<?php",
@@ -38,7 +68,7 @@
                     "executable": false
                 }
             },
-            "ref": "7d7e50f94786566329349f215bed7e7f82d35f0f"
+            "ref": "d1d4bba08c4df7af609267ce0cdb25f3cd564ce1"
         }
     }
 }
