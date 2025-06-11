@@ -33,47 +33,6 @@ ibexa:
                 media: /1/43/
             page_builder:
                 siteaccess_list: [site]
-            assets:
-                icon_sets:
-                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
-                default_icon_set: streamlineicons
-            content_type:
-                about:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#about'
-                article:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#article'
-                blog:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog'
-                blog_post:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog_post'
-                editor:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#author'
-                folder:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#folder'
-                form:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#form'
-                place:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#place'
-                product:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#product'
-                field:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#field'
-                user:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user'
-                user_group:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user_group'
-                file:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
-                gallery:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#gallery'
-                image:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#image'
-                video:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#video'
-                landing_page:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
-                default-config:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
             user_content_type_identifier: ['user', 'editor']
             user_profile:
                 enabled: true
