@@ -59,6 +59,7 @@
         "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": ["all"],
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
+        "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
         "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": ["all"],
         "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
         "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
@@ -80,7 +81,8 @@
         "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"],
         "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"],
         "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": ["all"],
-        "Ibexa\\Bundle\\AppSwitcher\\IbexaAppSwitcherBundle": ["all"]
+        "Ibexa\\Bundle\\AppSwitcher\\IbexaAppSwitcherBundle": ["all"],
+        "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
