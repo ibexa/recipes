@@ -108,7 +108,7 @@
         "#8": "- https://symfony.com/doc/4.4/components/cache/adapters/redis_adapter.html#configure-the-connection",
         "#9": "- https://symfony.com/doc/4.4/components/cache/adapters/memcached_adapter.html#configure-the-connection",
         "CACHE_DSN": "localhost",
-        "CACHE_NAMESPACE": "ezp",
+        "CACHE_NAMESPACE": "ibexa",
         "DATABASE_CHARSET": "utf8mb4",
         "DATABASE_COLLATION": "utf8mb4_unicode_520_ci",
         "#10": "Needed by Doctrine Bundle / ORM to prevent it from opening a connection during situations where there is no service yet.",
@@ -139,9 +139,10 @@
         "cache:clear": "symfony-cmd",
         "assets:install %PUBLIC_DIR%": "symfony-cmd",
         "yarn install": "script",
-        "yarn ibexa-generate-tsconfig": "script",
+        "yarn ibexa-generate-tsconfig --relative-paths": "script",
         "ibexa:encore:compile --config-name app": "symfony-cmd",
         "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
-        "ibexa:encore:compile": "symfony-cmd"
+        "ibexa:encore:compile": "symfony-cmd",
+        "ibexa:encore:compile --frontend-configs-name ibexa,internals,libs,richtext": "symfony-cmd"
     }
 }
