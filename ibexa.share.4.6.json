@@ -23,6 +23,7 @@
                         "                excluded_content_types:",
                         "                    - 'tag'",
                         "                    - 'product_category_tag'",
+                        "                    - 'landing_page'",
                         ""
                     ],
                     "executable": false
@@ -38,7 +39,7 @@
                     "executable": false
                 }
             },
-            "ref": "a2fef4ec8c6ceae18729caae24281d68b20552a9"
+            "ref": "a5c20fb16d0429c77d907049b393c69617c3651f"
         }
     }
 }
