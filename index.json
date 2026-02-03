@@ -432,6 +432,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-gemini": [
+            "5.0"
+        ],
         "ibexa/connector-openai": [
             "4.6",
             "5.0"
@@ -914,6 +917,9 @@
         "ibexa/shipping": [
             "4.5",
             "4.6",
+            "5.0"
+        ],
+        "ibexa/shopping-list": [
             "5.0"
         ],
         "ibexa/site-context": [

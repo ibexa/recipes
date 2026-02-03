@@ -83,6 +83,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/connector-ai](https://packagist.org/packages/ibexa/connector-ai) | [5.0](ibexa/connector-ai/5.0) |  |
 | [ibexa/connector-anthropic](https://packagist.org/packages/ibexa/connector-anthropic) | [5.0](ibexa/connector-anthropic/5.0) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [5.0](ibexa/connector-dam/5.0) |  |
+| [ibexa/connector-gemini](https://packagist.org/packages/ibexa/connector-gemini) | [5.0](ibexa/connector-gemini/5.0) |  |
 | [ibexa/connector-openai](https://packagist.org/packages/ibexa/connector-openai) | [5.0](ibexa/connector-openai/5.0) |  |
 | [ibexa/connector-payum](https://packagist.org/packages/ibexa/connector-payum) | [5.0](ibexa/connector-payum/5.0) |  |
 | [ibexa/connector-quable](https://packagist.org/packages/ibexa/connector-quable) | [5.0](ibexa/connector-quable/5.0) |  |
@@ -148,6 +149,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/seo](https://packagist.org/packages/ibexa/seo) | [5.0](ibexa/seo/5.0) |  |
 | [ibexa/share](https://packagist.org/packages/ibexa/share) | [5.0](ibexa/share/5.0) |  |
 | [ibexa/shipping](https://packagist.org/packages/ibexa/shipping) | [5.0](ibexa/shipping/5.0) |  |
+| [ibexa/shopping-list](https://packagist.org/packages/ibexa/shopping-list) | [5.0](ibexa/shopping-list/5.0) |  |
 | [ibexa/site-context](https://packagist.org/packages/ibexa/site-context) | [5.0](ibexa/site-context/5.0) |  |
 | [ibexa/site-factory](https://packagist.org/packages/ibexa/site-factory) | [5.0](ibexa/site-factory/5.0) |  |
 | [ibexa/solr](https://packagist.org/packages/ibexa/solr) | [5.0](ibexa/solr/5.0) |  |
