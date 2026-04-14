@@ -27,6 +27,7 @@
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-connector-actito": "ibexa/connector-actito",
+        "ibexa-connector-raptor": "ibexa/connector-raptor",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
         "ibexa-headless": "ibexa/headless",
@@ -34,10 +35,12 @@
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexaconnectoractito": "ibexa/connector-actito",
+        "ibexaconnectorraptor": "ibexa/connector-raptor",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
         "ibexaheadless": "ibexa/headless",
-        "ibexaoss": "ibexa/oss"
+        "ibexaoss": "ibexa/oss",
+        "raptor": "ibexa/connector-raptor"
     },
     "recipes": {
         "ezsystems/behatbundle": [
@@ -450,6 +453,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-raptor": [
+            "5.0"
+        ],
         "ibexa/connector-unsplash": [
             "4.0",
             "4.1",
@@ -736,6 +742,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/mcp": [
+            "5.0"
+        ],
         "ibexa/measurement": [
             "4.1",
             "4.2",
@@ -985,6 +994,9 @@
         "ibexa/test-fixtures": [
             "4.5",
             "4.6",
+            "5.0"
+        ],
+        "ibexa/translations-management": [
             "5.0"
         ],
         "ibexa/tree-builder": [
