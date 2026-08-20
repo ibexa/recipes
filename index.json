@@ -590,6 +590,9 @@
             "5.0",
             "6.0"
         ],
+        "ibexa/data-intelligence-layer": [
+            "6.0"
+        ],
         "ibexa/design-engine": [
             "4.0",
             "4.1",
@@ -599,6 +602,9 @@
             "4.5",
             "4.6",
             "5.0",
+            "6.0"
+        ],
+        "ibexa/design-system-twig": [
             "6.0"
         ],
         "ibexa/discounts": [
@@ -634,6 +640,9 @@
             "4.6",
             "5.0",
             "6.0"
+        ],
+        "ibexa/documentation-developer": [
+            "5.0"
         ],
         "ibexa/elasticsearch": [
             "4.0",
