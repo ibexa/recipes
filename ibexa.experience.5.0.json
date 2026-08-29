@@ -2864,10 +2864,6 @@
                         "",
                         "ibexa.page_builder_preview:",
                         "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_preview.yaml'",
-                        "",
-                        "ibexa.page_builder.rest:",
-                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_rest.yaml'",
-                        "    prefix: '%ibexa.rest.path_prefix%'",
                         ""
                     ],
                     "executable": false
@@ -3752,7 +3748,7 @@
                     "executable": false
                 }
             },
-            "ref": "4135d45a7de62d3461480fd98c64a15287f185c0"
+            "ref": "099de87fa79301ad78d982b6553d2204440a5c5a"
         }
     }
 }
