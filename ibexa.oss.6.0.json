@@ -128,17 +128,10 @@
                     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
                         "all"
                     ],
-                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
-                        "dev",
-                        "behat"
-                    ],
                     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
                         "all"
                     ],
                     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
-                        "all"
-                    ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
                         "all"
                     ],
                     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
@@ -1819,6 +1812,8 @@
                         "                subscriptions:",
                         "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserPasswordReset:",
                         "                        channels: [ email ]",
+                        "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserInvitation:",
+                        "                        channels: [ email ]",
                         ""
                     ],
                     "executable": false
@@ -2243,7 +2238,7 @@
                         "  \"devDependencies\": {",
                         "    \"@babel/preset-react\": \"^7.0.0\",",
                         "    \"@babel/runtime\": \"^7.13.10\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^47.0.0\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^61.1.0\",",
                         "    \"@hotwired/stimulus\": \"^3.0.0\",",
                         "    \"@ibexa/frontend-config\": \"https://github.com/ibexa/frontend-config#^v5.0.0\",",
                         "    \"@ibexa/ts-config\": \"https://github.com/ibexa/ts-config-ibexa#^v1.1.1\",",
@@ -2253,7 +2248,7 @@
                         "    \"@types/react-dom\": \"^19.1.2\",",
                         "    \"@types/react\": \"^19.1.2\",",
                         "    \"@typescript-eslint/typescript-estree\": \"^8.62.1\",",
-                        "    \"ckeditor5\": \"^45.0.0\",",
+                        "    \"ckeditor5\": \"^48.5.1\",",
                         "    \"core-js\": \"^3.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
                         "    \"fork-ts-checker-webpack-plugin\": \"^7.0.0\",",
@@ -2267,7 +2262,10 @@
                         "    \"typescript\": \"^5.6.3\",",
                         "    \"webpack-cli\": \"^6.0.1\",",
                         "    \"webpack-notifier\": \"^1.6.0\",",
-                        "    \"webpack\": \"^5.99.7\"",
+                        "    \"webpack\": \">=5.99.7 <5.112.0\"",
+                        "  },",
+                        "  \"resolutions\": {",
+                        "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"dependencies\": {",
                         "    \"react\": \"^19.1.0\",",
@@ -2947,7 +2945,7 @@
                     "executable": false
                 }
             },
-            "ref": "215a455f75bf695b063268f4024d47337fe9c4ce"
+            "ref": "bfe8ac5fe347785a91f8cd6e7cf3d03fdcd542c7"
         }
     }
 }

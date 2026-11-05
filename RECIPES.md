@@ -56,6 +56,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/activity-log](https://packagist.org/packages/ibexa/activity-log) | [6.0](../../../tree/main/ibexa/activity-log/6.0) |  |
 | [ibexa/admin-ui](https://packagist.org/packages/ibexa/admin-ui) | [6.0](../../../tree/main/ibexa/admin-ui/6.0) |  |
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [6.0](../../../tree/main/ibexa/admin-ui-assets/6.0) |  |
+| [ibexa/admin-ui-extras](https://packagist.org/packages/ibexa/admin-ui-extras) | [6.0](../../../tree/main/ibexa/admin-ui-extras/6.0) |  |
 | [ibexa/app-switcher](https://packagist.org/packages/ibexa/app-switcher) | [6.0](../../../tree/main/ibexa/app-switcher/6.0) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [6.0](../../../tree/main/ibexa/behat/6.0) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [6.0](../../../tree/main/ibexa/calendar/6.0) |  |
@@ -81,6 +82,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/connect](https://packagist.org/packages/ibexa/connect) | [6.0](../../../tree/main/ibexa/connect/6.0) |  |
 | [ibexa/connector-actito](https://packagist.org/packages/ibexa/connector-actito) | [6.0](../../../tree/main/ibexa/connector-actito/6.0) | `actito`, `ibexa-connector-actito`, `ibexaconnectoractito` |
 | [ibexa/connector-ai](https://packagist.org/packages/ibexa/connector-ai) | [6.0](../../../tree/main/ibexa/connector-ai/6.0) |  |
+| [ibexa/connector-ai-assistant](https://packagist.org/packages/ibexa/connector-ai-assistant) | [6.0](../../../tree/main/ibexa/connector-ai-assistant/6.0) | `ai-assistant`, `aiassistant`, `ibexa-connector-ai-assistant`, `ibexaconnectoraiassistant` |
 | [ibexa/connector-anthropic](https://packagist.org/packages/ibexa/connector-anthropic) | [6.0](../../../tree/main/ibexa/connector-anthropic/6.0) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [6.0](../../../tree/main/ibexa/connector-dam/6.0) |  |
 | [ibexa/connector-gemini](https://packagist.org/packages/ibexa/connector-gemini) | [6.0](../../../tree/main/ibexa/connector-gemini/6.0) |  |
@@ -112,6 +114,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [6.0](../../../tree/main/ibexa/elasticsearch/6.0) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [6.0](../../../tree/main/ibexa/experience/6.0) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
 | [ibexa/fastly](https://packagist.org/packages/ibexa/fastly) | [6.0](../../../tree/main/ibexa/fastly/6.0) |  |
+| [ibexa/featured](https://packagist.org/packages/ibexa/featured) | [6.0](../../../tree/main/ibexa/featured/6.0) |  |
 | [ibexa/fieldtype-address](https://packagist.org/packages/ibexa/fieldtype-address) | [6.0](../../../tree/main/ibexa/fieldtype-address/6.0) |  |
 | [ibexa/fieldtype-matrix](https://packagist.org/packages/ibexa/fieldtype-matrix) | [6.0](../../../tree/main/ibexa/fieldtype-matrix/6.0) |  |
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [6.0](../../../tree/main/ibexa/fieldtype-page/6.0) |  |
@@ -141,7 +144,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/page-builder](https://packagist.org/packages/ibexa/page-builder) | [6.0](../../../tree/main/ibexa/page-builder/6.0) |  |
 | [ibexa/payment](https://packagist.org/packages/ibexa/payment) | [6.0](../../../tree/main/ibexa/payment/6.0) |  |
 | [ibexa/permissions](https://packagist.org/packages/ibexa/permissions) | [6.0](../../../tree/main/ibexa/permissions/6.0) |  |
-| [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [6.0](../../../tree/main/ibexa/personalization/6.0) |  |
+| [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [5.0](../../../tree/main/ibexa/personalization/5.0) |  |
 | [ibexa/personalization-client](https://packagist.org/packages/ibexa/personalization-client) | [6.0](../../../tree/main/ibexa/personalization-client/6.0) |  |
 | [ibexa/product-catalog](https://packagist.org/packages/ibexa/product-catalog) | [6.0](../../../tree/main/ibexa/product-catalog/6.0) |  |
 | [ibexa/product-catalog-date-time-attribute](https://packagist.org/packages/ibexa/product-catalog-date-time-attribute) | [6.0](../../../tree/main/ibexa/product-catalog-date-time-attribute/6.0) |  |

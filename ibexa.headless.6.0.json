@@ -146,9 +146,6 @@
                     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": [
                         "all"
                     ],
@@ -167,17 +164,10 @@
                     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
                         "all"
                     ],
-                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
-                        "dev",
-                        "behat"
-                    ],
                     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
                         "all"
                     ],
                     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
-                        "all"
-                    ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
                         "all"
                     ],
                     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
@@ -211,6 +201,15 @@
                         "all"
                     ],
                     "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": [
                         "all"
                     ]
                 },
@@ -249,10 +248,6 @@
                     "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
                     "SOLR_DSN": "http://localhost:8983/solr",
                     "SOLR_CORE": "collection1",
-                    "#12": "Enable Personalization by setting valid id, key and uri",
-                    "PERSONALIZATION_CUSTOMER_ID": 0,
-                    "PERSONALIZATION_LICENSE_KEY": "",
-                    "PERSONALIZATION_HOST_URI": "",
                     "ELASTICSEARCH_DSN": "http://localhost:9200",
                     "#13": "Enable fastly by setting valid service_id and key",
                     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
@@ -1914,6 +1909,8 @@
                         "                subscriptions:",
                         "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserPasswordReset:",
                         "                        channels: [ email ]",
+                        "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserInvitation:",
+                        "                        channels: [ email ]",
                         ""
                     ],
                     "executable": false
@@ -2374,7 +2371,7 @@
                         "        #        - 'Ibexa\\Cdp\\Security\\CdpRequestAuthenticator'",
                         "        #    stateless: true",
                         "",
-                        "        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL",
+                        "        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST, and/or GraphQL, and/or MCP",
                         "        #ibexa_jwt_rest:",
                         "        #    request_matcher: Ibexa\\Rest\\Security\\JWTTokenCreationRESTRequestMatcher",
                         "        #    user_checker: Ibexa\\Core\\MVC\\Symfony\\Security\\UserChecker",
@@ -2396,6 +2393,13 @@
                         "",
                         "        #ibexa_jwt_graphql:",
                         "        #    request_matcher: Ibexa\\GraphQL\\Security\\NonAdminGraphQLRequestMatcher",
+                        "        #    provider: ibexa",
+                        "        #    stateless: true",
+                        "        #    jwt: ~",
+                        "",
+                        "        #ibexa_jwt_mcp:",
+                        "        #    request_matcher: Ibexa\\Mcp\\Security\\McpRequestMatcher",
+                        "        #    user_checker: Ibexa\\Core\\MVC\\Symfony\\Security\\UserChecker",
                         "        #    provider: ibexa",
                         "        #    stateless: true",
                         "        #    jwt: ~",
@@ -2549,6 +2553,14 @@
                     ],
                     "executable": false
                 },
+                "config/routes/ibexa_featured.yaml": {
+                    "contents": [
+                        "ibexa.featured:",
+                        "    resource: '@IbexaFeaturedBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/ibexa_fieldtype_query.yaml": {
                     "contents": [
                         "ibexa.field_type_query:",
@@ -2591,20 +2603,6 @@
                         "#league_oauth2_server_bundle:",
                         "#    resource: '@LeagueOAuth2ServerBundle/Resources/config/routes.php'",
                         "#    type: php",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_personalization.yaml": {
-                    "contents": [
-                        "ibexa.personalization:",
-                        "    resource: '@IbexaPersonalizationBundle/Resources/config/routing.yaml'",
-                        "    defaults:",
-                        "        siteaccess_group_whitelist: '%admin_group_name%'",
-                        "",
-                        "ibexa.personalization.rest:",
-                        "    resource: \"@IbexaPersonalizationBundle/Resources/config/routing_rest.yaml\"",
-                        "    prefix:   '%ibexa.rest.path_prefix%'",
                         ""
                     ],
                     "executable": false
@@ -2690,6 +2688,16 @@
                     ],
                     "executable": false
                 },
+                "config/routes/ibexa_translations_management.yaml": {
+                    "contents": [
+                        "ibexa.translations_management.admin:",
+                        "    resource: '@IbexaTranslationsManagementBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/ibexa_user.yaml": {
                     "contents": [
                         "ibexa.user:",
@@ -2740,7 +2748,7 @@
                         "  \"devDependencies\": {",
                         "    \"@babel/preset-react\": \"^7.0.0\",",
                         "    \"@babel/runtime\": \"^7.13.10\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^47.0.0\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^61.1.0\",",
                         "    \"@hotwired/stimulus\": \"^3.0.0\",",
                         "    \"@ibexa/frontend-config\": \"https://github.com/ibexa/frontend-config#^v5.0.0\",",
                         "    \"@ibexa/ts-config\": \"https://github.com/ibexa/ts-config-ibexa#~v1.1.1\",",
@@ -2750,7 +2758,7 @@
                         "    \"@types/react-dom\": \"^19.1.2\",",
                         "    \"@types/react\": \"^19.1.2\",",
                         "    \"@typescript-eslint/typescript-estree\": \"^8.62.1\",",
-                        "    \"ckeditor5\": \"^45.0.0\",",
+                        "    \"ckeditor5\": \"^48.5.1\",",
                         "    \"core-js\": \"^3.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
                         "    \"fork-ts-checker-webpack-plugin\": \"^7.0.0\",",
@@ -2765,7 +2773,10 @@
                         "    \"typescript\": \"^5.6.3\",",
                         "    \"webpack-cli\": \"^6.0.1\",",
                         "    \"webpack-notifier\": \"^1.6.0\",",
-                        "    \"webpack\": \"^5.99.7\"",
+                        "    \"webpack\": \">=5.99.7 <5.112.0\"",
+                        "  },",
+                        "  \"resolutions\": {",
+                        "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"dependencies\": {",
                         "    \"react\": \"^19.1.0\",",
@@ -3442,7 +3453,7 @@
                     "executable": false
                 }
             },
-            "ref": "7e622a4164bb6226a9564d47a362d3bd0897ef74"
+            "ref": "3d928fbd6a0c263059cacad879d7ca0f7c90e0c1"
         }
     }
 }

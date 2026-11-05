@@ -164,9 +164,6 @@
                     "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": [
                         "all"
                     ],
-                    "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": [
                         "all"
                     ],
@@ -185,17 +182,10 @@
                     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
                         "all"
                     ],
-                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
-                        "dev",
-                        "behat"
-                    ],
                     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
                         "all"
                     ],
                     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
-                        "all"
-                    ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
                         "all"
                     ],
                     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
@@ -242,6 +232,15 @@
                     ],
                     "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": [
                         "all"
+                    ],
+                    "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": [
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -279,10 +278,6 @@
                     "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
                     "SOLR_DSN": "http://localhost:8983/solr",
                     "SOLR_CORE": "collection1",
-                    "#12": "Enable Personalization by setting valid id, key and uri",
-                    "PERSONALIZATION_CUSTOMER_ID": 0,
-                    "PERSONALIZATION_LICENSE_KEY": "",
-                    "PERSONALIZATION_HOST_URI": "",
                     "ELASTICSEARCH_DSN": "http://localhost:9200",
                     "#13": "Enable fastly by setting valid service_id and key",
                     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
@@ -1852,17 +1847,6 @@
                         "    # Session save path as used by symfony session handlers (eg. used for dsn with redis)",
                         "    #ibexa.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'",
                         "",
-                        "    # Trusted custom header name to be mapped to X_FORWARDED_FOR",
-                        "    #ibexa.trusted_header_client_ip_name: 'X-Custom-Client-Ip-Header'",
-                        "    #",
-                        "    ## Keep in mind you need will to configure the kernel.trusted_proxies option with",
-                        "    ## an IP address of your reverse proxy server to allow use of trusted headers",
-                        "    ##",
-                        "    ## framework:",
-                        "    ##     trusted_proxies: ['127.0.0.1']",
-                        "    ##",
-                        "    ## More information: https://symfony.com/doc/current/deployment/proxies.html",
-                        "",
                         "    # Predefined pools are located in config/packages/cache_pool/",
                         "    # You can add your own cache pool to the folder mentioned above.",
                         "    # In order to change the default cache_pool use environmental variable export.",
@@ -2044,6 +2028,10 @@
                         "            notifier:",
                         "                subscriptions:",
                         "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserPasswordReset:",
+                        "                        channels: [ email ]",
+                        "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserInvitation:",
+                        "                        channels: [ email ]",
+                        "                    Ibexa\\Contracts\\FormBuilder\\Notifications\\FormSubmitted:",
                         "                        channels: [ email ]",
                         ""
                     ],
@@ -2295,6 +2283,22 @@
                         "        - boolean",
                         "        - choice",
                         "        - link",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ibexa_share.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    system:",
+                        "        admin_group:",
+                        "            share:",
+                        "                content_type_groups:",
+                        "                    - 'Content'",
+                        "                excluded_content_types:",
+                        "                    - 'tag'",
+                        "                    - 'product_category_tag'",
+                        "                    - 'landing_page'",
                         ""
                     ],
                     "executable": false
@@ -2777,6 +2781,14 @@
                     ],
                     "executable": false
                 },
+                "config/routes/ibexa_featured.yaml": {
+                    "contents": [
+                        "ibexa.featured:",
+                        "    resource: '@IbexaFeaturedBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/ibexa_fieldtype_address.yaml": {
                     "contents": [
                         "ibexa.field_type_address:",
@@ -2861,20 +2873,10 @@
                         "",
                         "ibexa.page_builder_preview:",
                         "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_preview.yaml'",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/routes/ibexa_personalization.yaml": {
-                    "contents": [
-                        "ibexa.personalization:",
-                        "    resource: '@IbexaPersonalizationBundle/Resources/config/routing.yaml'",
-                        "    defaults:",
-                        "        siteaccess_group_whitelist: '%admin_group_name%'",
                         "",
-                        "ibexa.personalization.rest:",
-                        "    resource: \"@IbexaPersonalizationBundle/Resources/config/routing_rest.yaml\"",
-                        "    prefix:   '%ibexa.rest.path_prefix%'",
+                        "ibexa.page_builder.rest:",
+                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
                         ""
                     ],
                     "executable": false
@@ -2980,6 +2982,16 @@
                     ],
                     "executable": false
                 },
+                "config/routes/ibexa_translations_management.yaml": {
+                    "contents": [
+                        "ibexa.translations_management.admin:",
+                        "    resource: '@IbexaTranslationsManagementBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/ibexa_user.yaml": {
                     "contents": [
                         "ibexa.user:",
@@ -3030,7 +3042,7 @@
                         "  \"devDependencies\": {",
                         "    \"@babel/preset-react\": \"^7.0.0\",",
                         "    \"@babel/runtime\": \"^7.13.10\",",
-                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^47.0.0\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^61.1.0\",",
                         "    \"@hotwired/stimulus\": \"^3.0.0\",",
                         "    \"@ibexa/frontend-config\": \"https://github.com/ibexa/frontend-config#^v5.0.0\",",
                         "    \"@ibexa/ts-config\": \"https://github.com/ibexa/ts-config-ibexa#^v1.1.1\",",
@@ -3040,7 +3052,7 @@
                         "    \"@types/react-dom\": \"^19.1.2\",",
                         "    \"@types/react\": \"^19.1.2\",",
                         "    \"@typescript-eslint/typescript-estree\": \"^8.62.1\",",
-                        "    \"ckeditor5\": \"^45.0.0\",",
+                        "    \"ckeditor5\": \"^48.5.1\",",
                         "    \"core-js\": \"^3.0.0\",",
                         "    \"file-loader\": \"^6.0.0\",",
                         "    \"fork-ts-checker-webpack-plugin\": \"^7.0.0\",",
@@ -3055,7 +3067,10 @@
                         "    \"typescript\": \"^5.6.3\",",
                         "    \"webpack-cli\": \"^6.0.1\",",
                         "    \"webpack-notifier\": \"^1.6.0\",",
-                        "    \"webpack\": \"^5.99.7\"",
+                        "    \"webpack\": \">=5.99.7 <5.112.0\"",
+                        "  },",
+                        "  \"resolutions\": {",
+                        "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"dependencies\": {",
                         "    \"react\": \"^19.1.0\",",
@@ -3746,7 +3761,7 @@
                     "executable": false
                 }
             },
-            "ref": "5ee95b98abe359bc28e9a08a6f6ce6e45d75aaa7"
+            "ref": "fa7a2333eae775343f8caa568f6c3c90bd09ff60"
         }
     }
 }
