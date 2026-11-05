@@ -42,10 +42,8 @@
     "Ibexa\\Bundle\\Search\\IbexaSearchBundle": ["all"],
     "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
-    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev","behat"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
-    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"],
     "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"],
     "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": ["all"]

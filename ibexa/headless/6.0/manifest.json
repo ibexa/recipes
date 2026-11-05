@@ -58,17 +58,14 @@
         "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
-        "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
         "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": ["all"],
         "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
         "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
         "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
         "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
         "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
-        "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev","behat"],
         "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
         "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
-        "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
         "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
             "all"
         ],
@@ -81,7 +78,10 @@
         "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"],
         "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": ["all"],
         "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"],
-        "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": ["all"]
+        "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": ["all"],
+        "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundle": ["all"],
+        "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": ["all"],
+        "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
@@ -118,10 +118,6 @@
         "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
         "SOLR_DSN": "http://localhost:8983/solr",
         "SOLR_CORE": "collection1",
-        "#12": "Enable Personalization by setting valid id, key and uri",
-        "PERSONALIZATION_CUSTOMER_ID": 0,
-        "PERSONALIZATION_LICENSE_KEY": "",
-        "PERSONALIZATION_HOST_URI": "",
         "ELASTICSEARCH_DSN": "http://localhost:9200",
         "#13": "Enable fastly by setting valid service_id and key",
         "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
